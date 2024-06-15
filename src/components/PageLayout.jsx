@@ -1,16 +1,13 @@
 import React from 'react'
-import { Navbar } from './Navbar'
-import { Footer } from './Footer'
-import { Body } from './Body'
+import { Spinner } from './Spinner'
 
 export const PageLayout = () => {
   return (
     <>
         <div>
-            <h2>Website Demo</h2>
-            <Navbar/>
-            <Body/>
-            <Footer/>
+            <h1>Dad Dev</h1>
+            <Spinner/>
+            <h3>Coming soon...</h3>
         </div>
     </>
   )
