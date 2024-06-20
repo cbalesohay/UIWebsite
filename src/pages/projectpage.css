@@ -1,0 +1,8 @@
+.project-layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}

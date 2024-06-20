@@ -1,0 +1,20 @@
+.card{
+    height: 350px;
+    width: 400px;
+    background-color: rgb(89, 202, 167);
+    padding-top: 25px;
+    border-radius: 10px;
+}
+
+.card-inside{
+    height: 150px;
+    background: #111;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+}
