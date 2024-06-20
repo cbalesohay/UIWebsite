@@ -1,16 +1,18 @@
 import React from 'react'
 import { Navbar } from './Navbar'
 import { Footer } from './Footer'
-import { Body } from './Body'
 import './pagelayout.css'
 
-export const PageLayout = () => {
+
+export const PageLayout = ({children}) => {
   return (
     <>
       <div className='page'>
           <Navbar/>
-          <Body/>
-          <Footer/>
+          {children}
+          <footer className='footer'>
+            <Footer/>
+          </footer>
       </div>
     </>
   )

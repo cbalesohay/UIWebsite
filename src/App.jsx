@@ -1,12 +1,12 @@
 import './App.css'
-import { ProjectPage } from './pages/ProjectPage'
+import { ProjectsPage } from './pages/ProjectsPage'
 
 function App() {
 
   return (
-    <ProjectPage>
+    <ProjectsPage>
       
-    </ProjectPage>
+    </ProjectsPage>
   )
 }
 
