@@ -1,16 +1,13 @@
 import React from 'react'
 import './card.css'
 
-export const Card = (props) => {
+export const Card = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
   return (
-    <div className='card'>
-        <div className='card-body'>
-            <img src={props.img}/>
-            <div className='card-inside'>
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-            </div>
-        </div>
+    <div className='card-container'>
+        {imgSrc && imgAlt && <img src={imgSrc} alt={imgAlt} className='card-img'/>}
+        {title && <h2 className='card-title'>{title}</h2>}
+        {description && <p className='card-description'>{description}</p>}
+        {link && buttonText && <a href={link} className='card-btn'>{buttonText}</a>}
     </div>
   )
 }

@@ -10,9 +10,7 @@ export const PageLayout = ({children}) => {
       <div className='page'>
           <Navbar/>
           {children}
-          <footer className='footer'>
-            <Footer/>
-          </footer>
+          <Footer/>
       </div>
     </>
   )
