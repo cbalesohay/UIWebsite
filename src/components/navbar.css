@@ -1,7 +1,6 @@
 .container {
-    font-size: 0.9rem;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    height: 70px;
+  height: 70px;
+  width: 100%;
 }
 
 .navbar {
@@ -9,7 +8,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 90%;
   margin: auto;
 }
 
@@ -28,4 +26,14 @@
 .container .navbar ul li {
   padding: 18px;
   margin: 0 10px;
+  font-weight: 700;
+}
+
+img{
+  height: 50px;
+}
+
+.search{
+  background-color: #FFFFFF;
+  color: #191919;
 }

@@ -1,6 +1,37 @@
 .card-container{
     height: fit-content;
     width: 20rem;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+    border: 5px solid #191919;
+}
+
+.card-img{
+    height: 200px;
+    width: 100%;
+}
+
+.card-title, .card-description{
+    margin: 0.5rem 5%;
+}
+
+.card-btn{
+    text-align: center;
+    width: 70%;
+    padding: 0.5rem 1rem;
+    background-color: #F1B300;
+    color: #191919;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+/*
+.card-container{
+    height: fit-content;
+    width: 20rem;
     background-color: rgb(102, 102, 102);
     border-radius: 1rem;
     box-shadow: 0px 10px 8px #999;
@@ -30,3 +61,4 @@
     margin: 0.5rem;
     text-decoration: none;
 }
+*/

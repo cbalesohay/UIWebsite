@@ -1,12 +1,15 @@
 import React from 'react'
 import './navbar.css'
+import UILogo from '/src/images/UofI_Main_Full.png'
+
+/* Need to fix Image click to LandingPage on reload */
 
 export const Navbar = () => {
   return (
     <>
       <div className='container'>
         <div className='navbar'>
-          <h2>Website Demo</h2>
+        <img src={UILogo} alt='UI Logo'/>
           <nav>
             <ul>
               <li><a>Home</a></li>
@@ -17,7 +20,7 @@ export const Navbar = () => {
               <li><a>Contact Us</a></li>
             </ul>
           </nav>
-          <input placeholder='search'></input>
+          <input className='search' placeholder='...search'></input>
         </div>
       </div>
     </>

@@ -5,9 +5,21 @@ export const Footer = () => {
   return (
     <>
       <div className='footer-container'>
-        Contact info
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis enim laboriosam est debitis, magni officia quo? Ea error blanditiis nemo omnis consectetur facere! Similique dolorum velit, incidunt possimus fuga voluptates.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ipsam! Ullam provident delectus, repudiandae adipisci quas, assumenda, tempore recusandae amet quis quo dolores sunt. Aperiam minima blanditiis sed neque consequuntur?</p>
+        <br></br>
+        <h1>Social Medias</h1>
+        <br></br>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Projects</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Our People</a></li>
+          <li><a>Recent Publications</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+        <br></br>
+        <h3>Address</h3>
+        <h3>Phone Numbers</h3>
+        <h3>Rights Reserved</h3>
       </div>
     </>
   )
