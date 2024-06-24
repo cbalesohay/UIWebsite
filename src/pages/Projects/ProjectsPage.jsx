@@ -1,7 +1,7 @@
 import React from 'react'
-import { PageLayout } from '../components/PageLayout'
-import { Card } from '../UI/Card'
-import { Projects } from '../components/projects'
+import { PageLayout } from '../../components/Page Layout/PageLayout'
+import { Card } from '../../UI/Card/Card'
+import { Projects } from '../../components/Lists/projects'
 import './projectpage.css'
 
 export const ProjectsPage = () => {

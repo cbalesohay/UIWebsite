@@ -1,0 +1,13 @@
+.form-container{
+    display: grid;
+}
+
+.form-container select, input, textarea{
+    background-color: #FFFFFF;
+    color: #191919;
+}
+
+.form-container button{
+    background-color: #191919;
+    color: #FFFFFF;
+}
