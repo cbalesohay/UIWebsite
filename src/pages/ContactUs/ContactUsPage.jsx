@@ -1,6 +1,6 @@
 import React from 'react'
-import { PageLayout } from '../../components/PageLayout'
-import { People } from '../../components/people'
+import { PageLayout } from '../../components/PageLayout/PageLayout'
+import { People } from '../../components/Lists/people'
 import './contactus.css'
 
 export const ContactUsPage = () => {
@@ -9,6 +9,7 @@ export const ContactUsPage = () => {
       <h1>Contact Us</h1>
       <form className='form-container'>
         <select>
+          {/* Map through all availible Contacts */}
           {People.map((p, index) => (
             <option key={index} value={p.name}>{p.name}</option>
           ))}

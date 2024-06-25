@@ -1,7 +1,7 @@
 import React from 'react'
-import './card.css'
+import './projectcard.css'
 
-export const Card = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
+export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
   return (
     <div className='card-container' >
         {imgSrc && imgAlt && <img src={imgSrc} alt={imgAlt} className='card-img'/>}

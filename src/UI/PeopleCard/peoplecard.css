@@ -1,0 +1,17 @@
+.people-card-container{
+    background-color: #FFFFFF;
+    margin: 0.5rem;
+    border: 5px solid #191919;
+    display: flex;
+}
+
+.people-images{
+    display: flex;
+    height: 450px;
+    justify-items: flex-start;
+}
+
+.title-name{
+    display: flex;
+    justify-content: center;
+}
