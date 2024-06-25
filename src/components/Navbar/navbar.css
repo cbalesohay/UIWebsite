@@ -19,8 +19,12 @@
   justify-content: space-between;
 }
 
-.navbar ul li {
+.navbar ul li Link{
   list-style-type: none;
+}
+.my-tab{
+  text-decoration: none;
+  color: #191919;
 }
 
 .container .navbar ul li {

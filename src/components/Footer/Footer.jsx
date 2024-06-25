@@ -8,18 +8,11 @@ export const Footer = () => {
         <br></br>
         <h1>Social Medias</h1>
         <br></br>
-        <ul>
-          <li><a>Home</a></li>
-          <li><a>Projects</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Our People</a></li>
-          <li><a>Recent Publications</a></li>
-          <li><a>Contact Us</a></li>
-        </ul>
+        <h5>Address</h5>
         <br></br>
-        <h3>Address</h3>
-        <h3>Phone Numbers</h3>
-        <h3>Rights Reserved</h3>
+        <h4>Phone Numbers</h4>
+        <br></br>
+        <h6>Rights Reserved</h6>
       </div>
     </>
   )

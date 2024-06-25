@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageLayout } from '../../components/Page Layout/PageLayout'
+import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { ProjectCard } from '../../UI/ProjectCard/ProjectCard'
 import { Projects } from '../../components/Lists/projects'
 import './projectpage.css'
