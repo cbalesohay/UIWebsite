@@ -7,18 +7,39 @@ export const ContactUsPage = () => {
   return (
     <PageLayout>
       <h1>Contact Us</h1>
-      <form className='form-container'>
-        <select>
-          {/* Map through all availible Contacts */}
-          {People.map((p, index) => (
-            <option key={index} value={p.name}>{p.name}</option>
-          ))}
-        </select>
-        <input placeholder='First Name'></input>
-        <input placeholder='Last Name'></input>
-        <textarea placeholder='Message'></textarea>
-        <button>Submit Form</button>
-      </form>
+      <div className="container">
+        <form>
+          <div className="input-group">
+            <div class="input-group mb-3">
+              <label class="input-group-text" for="inputGroupSelect01">Contacts</label>
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                {/* Map through all availible Contacts */}
+                {People.map((p, index) => (
+                  <option key={index} value={p.name}>{p.name}</option>
+                ))}
+              </select>
+            </div>
+            <div className="form-floating">
+              <input type='name' id='fname' className='form-control' placeholder='First Name'/>
+              <label for='fname'>First Name</label>
+            </div>
+            <div className="form-floating">
+              <input type='name' id='lname' className='form-control' placeholder='Last Name'/>
+              <label for='lname'>Last Name</label>
+            </div>
+          </div>
+          <div className="form-floating">
+            <input type='email' id='email' className='form-control' placeholder='Place Email Here'/>
+            <label for='email'>Email</label>
+          </div>
+          <div className="form-floating">
+            <textarea type='text' id='text' className='form-control' placeholder='Enter Text Here'/>
+            <label for='text'>Enter Text here</label>
+          </div>
+          <button className='btn btn-primary'>Submit</button>
+        </form>
+      </div>
     </PageLayout>
   )
 }

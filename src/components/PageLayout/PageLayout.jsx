@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../Navbar/Navbar'
+import { NavbarTop } from '../Navbar/Navbar'
 import { Footer } from '../Footer/Footer'
 import './pagelayout.css'
 
@@ -9,7 +9,7 @@ export const PageLayout = ({children}) => {
     <>
       {/* Allows for a flexible and reusable design structure */}
       <div className='page'>
-          <Navbar/>
+          <NavbarTop/>
           {children}
           <Footer/>
       </div>

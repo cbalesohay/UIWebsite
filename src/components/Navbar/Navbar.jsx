@@ -2,28 +2,114 @@ import React from 'react'
 import './navbar.css'
 import UILogo from '/src/images/UofI_Main_Full.png'
 import { Link } from 'react-router-dom'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 
-/* Need to fix Image click to LandingPage on reload */
 
-export const Navbar = () => {
+export const NavbarTop = () => {
   return (
     <>
-      <div className='container'>
-        <div className='navbar'>
-        <a href='./'><img src={UILogo} alt='UI Logo'/></a>
-          <nav>
-            <ul>
-              <li><Link className='my-tab' to='/'>Home</Link></li>
-              <li><Link className='my-tab' to='/Projects'>Projects</Link></li>
-              <li><Link className='my-tab' to='/AboutUs'>About Us</Link></li>
-              <li><Link className='my-tab' to='/OurPeople'>Our People</Link></li>
-              <li><Link className='my-tab' to='/RecentPublications'>Recent Publications</Link></li>
-              <li><Link className='my-tab' to='/ContactUs'>Contact Us</Link></li>
-            </ul>
-          </nav>
-          <input className='search' placeholder='...search'></input>
-        </div>
-      </div>
+      <Navbar expand="lg" className="bg-body-tertiary" fixed='top'>
+        <Container>
+          <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/'>Home</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/Projects'>Projects</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/OurPeople'>Our People</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
+        </Container>
+        <Container>
+          <Navbar.Brand>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
     </>
   )
 }
+
+
+/*
+
+This is for the expanding bar at break point (need to learn how to integrate with current theme)
+
+
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+{['xl'].map((expand) => (
+      <Navbar key={expand} expand={expand} className="bg-body-tertiary" fixed='top'>
+        <Container fluid>
+          <Navbar.Brand>
+            <Container>
+              <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
+            </Container>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <Navbar.Offcanvas
+            id={`offcanvasNavbar-expand-${expand}`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+              <Container>
+                <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
+              </Container>
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/'>Home</Link></Navbar.Brand>
+                </Container>
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/Projects'>Projects</Link></Navbar.Brand>
+                </Container>
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
+                </Container>
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/OurPeople'>Our People</Link></Navbar.Brand>
+                </Container>
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
+                </Container>
+                <Container>
+                  <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
+                </Container>
+              </Nav>
+              <Form className="d-flex">
+                <Form.Control
+                  type="search"
+                  placeholder="Search"
+                  className="me-2"
+                  aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+              </Form>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+    ))}
+
+*/
