@@ -8,11 +8,9 @@ export const PageLayout = ({children}) => {
   return (
     <>
       {/* Allows for a flexible and reusable design structure */}
-      <div className='page'>
-          <NavbarTop/>
-          {children}
-          <Footer/>
-      </div>
+      <NavbarTop/>
+      {children}
+      <Footer/>
     </>
   )
 }

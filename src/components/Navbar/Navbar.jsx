@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 export const NavbarTop = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary" fixed='top'>
+      <Navbar expand="lg" className="bg-body-tertiary" >
         <Container>
           <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
         </Container>

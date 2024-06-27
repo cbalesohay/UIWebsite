@@ -1,30 +1,8 @@
-.menu-card-container{
-    height: fit-content;
-    width: 20rem;
-    background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border: 5px solid #191919;
+.card{
+    margin: 20px;
 }
 
-.menu-card-img{
-    height: 200px;
+.card-img{
+    height: 270px;
     width: 100%;
-}
-
-.menu-card-title, .menu-card-description{
-    margin: 0.5rem 5%;
-}
-
-.menu-card-btn{
-    text-align: center;
-    width: 70%;
-    padding: 0.5rem 1rem;
-    background-color: #F1B300;
-    color: #191919;
-    margin: 0.5rem;
-    text-decoration: none;
 }

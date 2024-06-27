@@ -1,19 +1,12 @@
-.rotating-container{
-    background-color: #FFFFFF;
-    margin: 0.5rem;
-    border: 5px solid #191919;
+.rotating-img img{
+    height: 600px;
 }
 
-.rotating-images img{
-    height: 700px;
+.card-text-rotating{
+    background-color: rgb(241, 179, 0, 90%);
 }
 
-.rotating-images button{
-    text-align: center;
-    width: 20%;
-    padding: 0.5rem 1rem;
+.rotating-btn{
     background-color: #F1B300;
     color: #191919;
-    margin: 0.5rem;
-    text-decoration: none;
 }

@@ -28,8 +28,8 @@ export const Projects = [
     },
     {
         id: 3,
-        title: 'Manufacturing AI Data Analysis',
-        altImage: 'Manufacturing AI Data Analysis',
+        title: 'Manufacturing AI Data',
+        altImage: 'Manufacturing AI Data',
         url: '/src/images/AI.webp',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',

@@ -18,8 +18,3 @@
   margin: 0px;
   padding: 0px;
 }
-
-/* Fix Padding issue from Navbar fixed top */
-body{
-  padding-top: 70px;
-}
