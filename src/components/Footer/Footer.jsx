@@ -16,6 +16,9 @@ export const Footer = () => {
         <br />
         <Row>
           <Col>
+            {/**
+             * Add links
+             */}
             <h6>Home</h6>
             <h6>Projects</h6>
             <h6>About Us</h6>
