@@ -17,7 +17,7 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
             <Card.Text>
               {description && <p>{description}</p>}
             </Card.Text>
-            <Button variant="primary">{buttonText}</Button>
+            <Button variant="primary" className='project-btn'>{buttonText}</Button>
           </Card.Body>
         </Card>
       </Col>

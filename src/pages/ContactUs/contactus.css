@@ -11,3 +11,14 @@
     background-color: #191919;
     color: #FFFFFF;
 }
+
+.submit-btn{
+    background-color: #F1B300;
+    color: #191919;
+    border-color: #F1B300 !important;
+}
+
+.submit-btn:hover{
+    background-color: #F1B300;
+    color: #191919;
+}

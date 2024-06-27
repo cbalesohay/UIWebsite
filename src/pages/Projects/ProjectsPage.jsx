@@ -10,8 +10,8 @@ export const ProjectsPage = () => {
         <h1>Project Page</h1>
         <div className='project-layout'>
           {/* Map through all availible Projects */}
-          {Projects.map((project, index) => (
-            <ProjectCard key={index} imgSrc={project.url} imgAlt={project.altImage} title={project.title} description={project.description} buttonText={project.buttonText} link={project.link} />
+          {Projects.map((project) => (
+            <ProjectCard key={project.id} imgSrc={project.url} imgAlt={project.altImage} title={project.title} description={project.description} buttonText={project.buttonText} link={project.link} />
           ))}
         </div>
       </PageLayout>

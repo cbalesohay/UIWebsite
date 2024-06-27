@@ -6,3 +6,14 @@
     height: 270px;
     width: 100%;
 }
+
+.project-btn{
+    background-color: #FFFFFF;
+    color: #191919;
+    border-color: #F1B300 !important;
+}
+
+.project-btn:hover{
+    background-color: #F1B300;
+    color: #191919;
+}   

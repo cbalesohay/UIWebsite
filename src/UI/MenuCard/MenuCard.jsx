@@ -17,7 +17,7 @@ export const MenuCard = ({imgSrc, imgAlt, title, description, link}) => {
             <Card.Text>
               {description && <p>{description}</p>}
             </Card.Text>
-            <Button variant="primary" href={link}>Learn More</Button>
+            <Button variant="primary" className='menu-btn' href={link}>Learn More</Button>
           </Card.Body>
         </Card>
       </Col>

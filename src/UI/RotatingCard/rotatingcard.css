@@ -1,12 +1,26 @@
+.rotating-card-container{
+
+}
+
 .rotating-img img{
     height: 600px;
 }
 
-.card-text-rotating{
+.rotating-text-title{
+    color: #191919;
+}
+
+.rotating-card-text{
     background-color: rgb(241, 179, 0, 90%);
+    color: #191919;
 }
 
 .rotating-btn{
+    background-color: #FFFFFF;
+    color: #191919;
+    border-color: #F1B300 !important;
+}
+.rotating-btn:hover{
     background-color: #F1B300;
     color: #191919;
 }

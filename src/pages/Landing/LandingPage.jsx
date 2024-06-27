@@ -9,11 +9,11 @@ export const LandingPage = () => {
   return (
     <PageLayout>
       <h1>Landing Page</h1>
-      <RotatingCard />
+      <RotatingCard className='page-cards'/>
       <div className='page-cards'>
         {/* Map through all availible Pages */}
-        {Pages.map((page, index) => (
-          <MenuCard key={index} title={page.title} imgSrc={page.url} imgAlt={page.imgAlt} />
+        {Pages.slice(1).map((page) => (
+          <MenuCard key={page.id} title={page.title} imgSrc={page.url} imgAlt={page.imgAlt} />
         ))}
       </div>
     </PageLayout>

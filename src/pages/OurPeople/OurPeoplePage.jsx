@@ -8,8 +8,8 @@ export const OurPeoplePage = () => {
     <PageLayout>
       <h1>Our People</h1>
       {/* Map through all available People */}
-      {People.map((person, index) => (
-        <PeopleCard key={index} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} description={person.decription}/>
+      {People.map((person) => (
+        <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} description={person.decription}/>
       ))}
     </PageLayout>
   )

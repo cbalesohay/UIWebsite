@@ -37,7 +37,7 @@ export const ContactUsPage = () => {
             <textarea type='text' id='text' className='form-control' placeholder='Enter Text Here'/>
             <label for='text'>Enter Text here</label>
           </div>
-          <button className='btn btn-primary'>Submit</button>
+          <button className='btn submit-btn'>Submit</button>
         </form>
       </div>
     </PageLayout>
