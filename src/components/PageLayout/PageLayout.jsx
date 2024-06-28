@@ -3,7 +3,6 @@ import { NavbarTop } from '../Navbar/Navbar'
 import { Footer } from '../Footer/Footer'
 import './pagelayout.css'
 
-
 export const PageLayout = ({children}) => {
   return (
     <>

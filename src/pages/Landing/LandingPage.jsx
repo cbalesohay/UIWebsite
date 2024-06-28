@@ -9,7 +9,9 @@ export const LandingPage = () => {
   return (
     <PageLayout>
       <h1>Landing Page</h1>
-      <RotatingCard className='page-cards'/>
+      <div className='page-cards'>
+        <RotatingCard/>
+      </div>
       <div className='page-cards'>
         {/* Map through all availible Pages */}
         {Pages.slice(1).map((page) => (

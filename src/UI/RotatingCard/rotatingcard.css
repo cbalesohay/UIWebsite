@@ -1,9 +1,9 @@
 .rotating-card-container{
-
+    height: 700px;
 }
 
-.rotating-img img{
-    height: 600px;
+.rotating-img{
+    flex: content;
 }
 
 .rotating-text-title{
@@ -23,4 +23,19 @@
 .rotating-btn:hover{
     background-color: #F1B300;
     color: #191919;
+}
+
+.dot {
+    position: relative;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.active-dot, .dot:hover {
+    background-color: #717171;
 }

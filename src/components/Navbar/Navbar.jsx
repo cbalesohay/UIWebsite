@@ -4,38 +4,42 @@ import UILogo from '/src/images/UofI_Main_Full.png'
 import { Link } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { FaSistrix } from "react-icons/fa6";
 
 
 export const NavbarTop = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary" >
+      <Navbar expand="lg" className="bg-body-tertiary " >
         <Container>
           <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
         </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/'>Home</Link></Navbar.Brand>
+        <Container >
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/'>Home</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/Projects'>Projects</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/OurPeople'>Our People</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
+          </Container>
         </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/Projects'>Projects</Link></Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/OurPeople'>Our People</Link></Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
-        </Container>
-        <Container>
-          <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
-        </Container>
-        <Container>
+        <Container className='justify-content-end'>
           <Navbar.Brand>
-          <form class="d-flex" role="search">
+          <form class="d-flex align-items-center" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn search-btn" type="submit">Search</button>
+              <FaSistrix/>
+              {/* <button class="btn search-btn" type="submit">Search</button> */}
           </form>
           </Navbar.Brand>
         </Container>
