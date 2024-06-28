@@ -4,14 +4,15 @@ import { Pages } from '../../components/Lists/pages'
 import { RotatingCard } from '../../UI/RotatingCard/RotatingCard'
 import { MenuCard } from '../../UI/MenuCard/MenuCard'
 import './landingpage.css'
+import { Container } from 'react-bootstrap'
 
 export const LandingPage = () => {
   return (
     <PageLayout>
       <h1>Landing Page</h1>
-      <div className='page-cards'>
+      <Container className='rotating-card-container'>
         <RotatingCard/>
-      </div>
+      </Container>
       <div className='page-cards'>
         {/* Map through all availible Pages */}
         {Pages.slice(1).map((page) => (

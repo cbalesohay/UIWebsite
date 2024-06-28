@@ -39,7 +39,6 @@ export const NavbarTop = () => {
           <form class="d-flex align-items-center" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
               <FaSistrix/>
-              {/* <button class="btn search-btn" type="submit">Search</button> */}
           </form>
           </Navbar.Brand>
         </Container>

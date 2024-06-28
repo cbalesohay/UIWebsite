@@ -2,13 +2,7 @@ img{
   height: 50px;
 }
 
-.search-btn{
-  background-color: #FFFFFF !important;
-  color: #191919;
-  border-color: #F1B300 !important;
-}
-
-.search-btn:hover{
-  background-color: #F1B300 !important;
-  color: #191919;
+.form-control:focus{
+  border-color: rgb(241, 179, 0, 0.50) !important;
+  box-shadow: 0 0 0 0.2rem rgb(241, 179, 0, 0.25) !important;
 }
