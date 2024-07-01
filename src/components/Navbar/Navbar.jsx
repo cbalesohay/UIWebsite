@@ -37,7 +37,7 @@ export const NavbarTop = () => {
         <Container className='justify-content-end'>
           <Navbar.Brand>
           <form class="d-flex align-items-center" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+              <input class="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search"/>
               <FaSistrix/>
           </form>
           </Navbar.Brand>

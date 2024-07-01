@@ -9,7 +9,6 @@ import { Container } from 'react-bootstrap'
 export const LandingPage = () => {
   return (
     <PageLayout>
-      <h1>Landing Page</h1>
       <Container className='rotating-card-container'>
         <RotatingCard/>
       </Container>

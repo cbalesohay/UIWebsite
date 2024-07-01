@@ -1,15 +1,11 @@
-.form-container{
-    display: grid;
+.contact-form-container{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
-.form-container select, input, textarea{
-    background-color: #FFFFFF;
-    color: #191919;
-}
-
-.form-container button{
-    background-color: #191919;
-    color: #FFFFFF;
+.text-area-contact{
+    height: 125px !important;
 }
 
 .submit-btn{
@@ -21,4 +17,23 @@
 .submit-btn:hover{
     background-color: #F1B300;
     color: #191919;
+}
+
+.submit-btn:active{
+    background-color: #FFFFFF !important;
+    color: #191919 !important;
+}
+
+.form-contact-select:focus{
+    border-color: rgb(241, 179, 0, 0.50) !important;
+    box-shadow: 0 0 0 0.2rem rgb(241, 179, 0, 0.25) !important;
+}
+.form-contact-select option:focus{
+    background-color: #198754 !important;
+    color: #fff !important;
+}
+
+.contact-input:focus{
+    border-color: rgb(241, 179, 0, 0.50) !important;
+    box-shadow: 0 0 0 0.2rem rgb(241, 179, 0, 0.25) !important;
 }

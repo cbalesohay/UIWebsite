@@ -8,6 +8,7 @@ export const ProjectsPage = () => {
   return (
       <PageLayout>
         <h1>Project Page</h1>
+        <p>This should be an introduction to the project page *Still need to figure out layout for this*</p>
         <div className='project-layout'>
           {/* Map through all availible Projects */}
           {Projects.map((project) => (

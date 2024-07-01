@@ -1,5 +1,7 @@
 .card{
     margin: 20px;
+    border-width: 2px;
+    border-color: #F1B300;
 }
 
 .card-img{

@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap';
 export const Footer = () => {
   return (
     <>
-      <Navbar className='bg-body-tertiary footer-size'>
+      <Navbar className='bg-body-tertiary footer-size footer-color' data-bs-theme="dark">
         <Container className='jsutify-content-start'>
           <Row xs={1} md={1}>
             <Col>
@@ -39,7 +39,7 @@ export const Footer = () => {
         <Container className='justify-content-center'>
           <Row>
             <Col>
-              <img src='/src/images/UofI_Main_Full.png'/>
+              <img src='src/images/UofI_Main_White_Text.png'/>
               <br></br>
               <h6>1234 Address Street</h6>
               <h6>Coeur d'Alene,</h6>
