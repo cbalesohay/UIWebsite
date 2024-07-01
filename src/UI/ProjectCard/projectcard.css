@@ -22,3 +22,8 @@
     background-color: #FFFFFF !important;
     color: #191919 !important;
 }
+
+.placeholder-project-btn::before{
+    color: #191919 !important;
+    content: 'Loading';
+}

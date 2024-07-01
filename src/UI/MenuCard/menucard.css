@@ -21,3 +21,8 @@
     background-color: #FFFFFF !important;
     color: #191919 !important;
 }
+
+.placeholder-menu-btn::before{
+    color: #191919 !important;
+    content: 'Loading';
+}
