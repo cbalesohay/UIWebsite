@@ -1,8 +1,8 @@
-.card-img{
-    height: fit-content;
+.card-container{
+    margin: 20px;
+    border-width: 2px;
+    border-color: #191919 !important;
 }
-
-.people-card-container{
-    display: flex;
-    
+.people-card-title{
+    font-size: 30px;
 }

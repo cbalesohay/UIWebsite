@@ -4,6 +4,8 @@ export const Pages = [
         title: 'Landing Page',
         url: '/src/images/landingpage.jpg',
         imgAlt: 'preview',
+        description: '',
+        link: '',
         buttonText: 'View',
     },
     {
@@ -11,6 +13,8 @@ export const Pages = [
         title: 'Projects',
         url: '/src/images/projectpage.jpg',
         imgAlt: 'preview',
+        description: 'View the projects we have been working on!',
+        link: '/Projects',
         buttonText: 'View',
     },
     {
@@ -18,6 +22,8 @@ export const Pages = [
         title: 'About Us',
         url: '/src/images/aboutus.jpg',
         imgAlt: 'preview',
+        description: 'Come learn about the people that make up the team!',
+        link: '/Aboutus',
         buttonText: 'View',
     },
     {
@@ -25,6 +31,8 @@ export const Pages = [
         title: 'Recent Publications',
         url: '/src/images/recent.jpg',
         imgAlt: 'preview',
+        description: 'Learn about our most recent publications!',
+        link: '/Recentpublications',
         buttonText: 'View',
     },
     {
@@ -32,6 +40,8 @@ export const Pages = [
         title: 'Contact Us',
         url: '/src/images/contactus.jpg',
         imgAlt: 'preview',
+        description: 'If you have any questions feel free to contact us!',
+        link: '/Contactus',
         buttonText: 'View',
     },
 ]

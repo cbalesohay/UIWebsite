@@ -10,15 +10,15 @@ export const RotatingCard = () => {
        * Need to add Rotating picture functionality,
        * Fix Button, layout, img height
        */}
-      <Card className="bg-dark text-white rotating-card-container" style={{width: '70%'}}>
-        <Card.Img src='/src/images/minifactory.webp' alt="Card image" className='rotating-img'/>
+      <Card className="bg-dark text-white card" bsPrefix='rotating-card-container' style={{width: '50rem'}}>
+        <Card.Img src='/src/images/minifactory.webp' alt="Card image" bsPrefix='rotating-img'/>
         <Card.ImgOverlay>
           <Card.Title className='rotating-text-title'>Card title</Card.Title>
-          <Card.Text className='rotating-card-text'>
+          <Card.Text bsPrefix='rotating-card-text'>
             This is a wider card with supporting text below as a natural lead-in
             to additional content. This content is a little bit longer.
           </Card.Text>
-          <Button className='rotating-btn'>Go to Projects</Button>
+          <Button bsPrefix='btn rotating-btn'>Learn More</Button>
           <div className='rotating-slider'>
 
           </div>

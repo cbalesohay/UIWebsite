@@ -9,15 +9,15 @@ import { Container } from 'react-bootstrap'
 export const LandingPage = () => {
   return (
     <PageLayout>
-      <Container className='rotating-card-container'>
+      <Container bsPrefix='rotating-card-container'>
         <RotatingCard/>
       </Container>
-      <div className='page-cards'>
+      <Container bsPrefix='landing-page-cards'>
         {/* Map through all availible Pages */}
         {Pages.slice(1).map((page) => (
-          <MenuCard key={page.id} title={page.title} imgSrc={page.url} imgAlt={page.imgAlt} />
+          <MenuCard key={page.id} title={page.title} imgSrc={page.url} imgAlt={page.imgAlt} description={page.description} buttonText={page.buttonText} link={page.link} />
         ))}
-      </div>
+      </Container>
     </PageLayout>
   )
 }

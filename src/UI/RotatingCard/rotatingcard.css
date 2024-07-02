@@ -3,7 +3,8 @@
 }
 
 .rotating-img{
-    flex: content;
+    width: 100%;
+    height: 100%;
 }
 
 .rotating-text-title{
@@ -16,17 +17,18 @@
 }
 
 .rotating-btn{
-    background-color: #FFFFFF;
-    color: #191919;
+    background-color: #FFFFFF !important;
+    color: #191919 !important;
     border-color: #F1B300 !important;
 }
 .rotating-btn:hover{
-    background-color: #F1B300;
-    color: #191919;
+    background-color: #F1B300 !important;
+    color: #191919 !important;
 }
 .rotating-btn:active{
     background-color: #FFFFFF !important;
     color: #191919 !important;
+    border-color: #F1B300 !important;
 }
 
 .dot {

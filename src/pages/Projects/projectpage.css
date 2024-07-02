@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-image: url(src/images/UI-Joe-grey.jpg);
     padding: 10px;
     margin: 10px;
 }

@@ -1,13 +1,23 @@
-.card{
+.card-container{
     margin: 20px;
     border-width: 2px;
-    border-color: #F1B300;
+    border-color: #191919 !important;
 }
 
 .card-img{
     height: 270px;
     width: 100%;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }
+
+.menu-card-title{
+    font-size: 30px !important;
+}
+
+/*
+Fix the button alignment when different size text is added
+*/
 
 .menu-btn{
     background-color: #FFFFFF;
@@ -16,15 +26,10 @@
 }
 
 .menu-btn:hover{
-    background-color: #F1B300;
-    color: #191919;
+    background-color: #F1B300 !important;
+    color: #191919 !important;
 }
 .menu-btn:active{
     background-color: #FFFFFF !important;
     color: #191919 !important;
-}
-
-.placeholder-menu-btn::before{
-    color: #191919 !important;
-    content: 'Loading';
 }

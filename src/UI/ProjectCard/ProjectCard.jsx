@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Placeholder from 'react-bootstrap/Placeholder';
+import Spinner from 'react-bootstrap/Spinner';
 import './projectcard.css'
 
 export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
@@ -11,16 +12,17 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
     <>
     <Row xs={1} md={2} className="g-4">
       <Col>
-        <Card style={{ width: '25rem' }} className='card'>
+        {/* Bootstrap Card Layout */}
+        <Card style={{ width: '25rem', height: '30rem'}} className='card' bsPrefix='card-container'>
           {/**
            * If image and alt are unavailible, the placeholder animation = true
            */}
           {(!imgSrc && !imgAlt) ?
             <Placeholder>
-              <Card.Img variant="top" src="holder.js/100px180" />
+              <Card.Img variant="top" style={{height: '60%'}} src="holder.js/100px180" />
             </Placeholder>
             :
-            <Card.Img variant="top" src={imgSrc} alt={imgAlt} className='card-img'/>
+            <Card.Img variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='card-img'/>
           }
           <Card.Body>
             {/**
@@ -31,7 +33,9 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
                 <Placeholder xs={6} />
               </Placeholder>
               :
-              <Card.Title>{title && <h2>{title}</h2>}</Card.Title>
+              <Card.Title bsPrefix='project-card-title'>
+                {title}
+              </Card.Title>
           }
             {/**
              * If description is unavailible, the placeholder animation = true
@@ -43,16 +47,20 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
             </Placeholder>
             :
             <Card.Text>
-              {description && <p>{description}</p>}
+              {description}
             </Card.Text>
           }
             {/**
              * If buttonText is unavailible, the placeholder animation = true
              */}
-            {(!buttonText) ?
-            <Button variant="secondary" className='placeholder-project-btn placeholder-wave col-3' aria-hidden="true">{buttonText}</Button>
+            {(!buttonText && !link) ?
+            <Button variant="disabled secondary" className='col-3' bsPrefix='btn project-btn' aria-hidden="true">
+              <Spinner animation="border" size='sm' role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            </Button>
             :
-            <Button variant="primary" className='project-btn'>{buttonText}</Button>
+            <Button bsPrefix='btn project-btn' type='submit' value='submit' href={link}>{buttonText}</Button>
           }
           </Card.Body>
         </Card>

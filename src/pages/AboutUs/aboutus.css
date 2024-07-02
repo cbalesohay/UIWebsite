@@ -1,0 +1,11 @@
+.about-page-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(src/images/UI-Joe-grey.jpg);
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+}
