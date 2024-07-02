@@ -22,20 +22,13 @@ export const Pages = [
     },
     {
         id: 3,
-        title: 'Our People',
-        url: '/src/images/ourpeople.jpg',
-        imgAlt: 'preview',
-        buttonText: 'View',
-    },
-    {
-        id: 4,
         title: 'Recent Publications',
         url: '/src/images/recent.jpg',
         imgAlt: 'preview',
         buttonText: 'View',
     },
     {
-        id: 5,
+        id: 4,
         title: 'Contact Us',
         url: '/src/images/contactus.jpg',
         imgAlt: 'preview',

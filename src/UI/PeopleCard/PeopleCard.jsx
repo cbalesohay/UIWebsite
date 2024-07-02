@@ -8,7 +8,7 @@ export const PeopleCard = ({imgSrc, imgAlt, title, name, description}) => {
   return (
     <>
       {/* Bootstrap Card Layout */}
-      <Row xs={1} md={2} className="g-4">
+      <Row xs={1} md={3} className="g-4">
         <Col>
           <Card style={{width: '300px'}}>
             <Card.Img variant="top" className='card-img' src={imgSrc} alt={imgAlt} />
@@ -24,23 +24,3 @@ export const PeopleCard = ({imgSrc, imgAlt, title, name, description}) => {
     </>
   );
 }
-
-/*
-
-Original Card template
-
-import React from 'react'
-import './peoplecard.css'
-
-export const PeopleCard = ({imgSrc, imgAlt, title, name}) => {
-  return (
-    <div className='people-card-container'>
-        {imgSrc && imgAlt && <img src={imgSrc} alt={imgAlt} className='people-images'/>}
-        <div>
-            {title && name && <h2 className='title-name'>{title + name}</h2>}
-        </div>
-    </div>
-  )
-}
-
-*/

@@ -4,7 +4,6 @@ import App from './App.jsx'
 import { LandingPage } from './pages/Landing/LandingPage.jsx'
 import { ProjectsPage } from './pages/Projects/ProjectsPage.jsx'
 import { AboutUsPage } from './pages/AboutUs/AboutUsPage.jsx'
-import { OurPeoplePage } from './pages/OurPeople/OurPeoplePage.jsx';
 import { RecentPublicationsPage } from './pages/RecentPublications/RecentPublicationsPage.jsx'
 import { ContactUsPage } from './pages/ContactUs/ContactUsPage.jsx'
 import {
@@ -25,10 +24,6 @@ const router = createBrowserRouter([
   {
     path: "/AboutUs",
     element: <AboutUsPage/>,
-  },
-  {
-    path: "/OurPeople",
-    element: <OurPeoplePage/>,
   },
   {
     path: "/RecentPublications",
