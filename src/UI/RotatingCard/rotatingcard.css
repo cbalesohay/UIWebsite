@@ -8,7 +8,7 @@
 }
 
 .rotating-text-title{
-    color: #191919;
+    color: #191919 !important;
 }
 
 .rotating-card-text{
@@ -16,10 +16,17 @@
     color: #191919;
 }
 
+.footer-rotating-card{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
 .rotating-btn{
     background-color: #FFFFFF !important;
     color: #191919 !important;
     border-color: #F1B300 !important;
+
 }
 .rotating-btn:hover{
     background-color: #F1B300 !important;

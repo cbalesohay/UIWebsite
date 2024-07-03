@@ -1,7 +1,7 @@
 .card-container{
     margin: 20px;
     border-width: 2px;
-    border-color: #191919 !important;
+    border-color: #F1B300 !important;
 }
 
 .card-img{
@@ -18,6 +18,10 @@
 /*
 Fix the button alignment when different size text is added
 */
+
+.footer-menu-btn{
+    margin-bottom: 5px;
+}
 
 .menu-btn{
     background-color: #FFFFFF;
