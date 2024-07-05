@@ -9,16 +9,10 @@ export const AboutUsPage = () => {
   return (
     <PageLayout>
       <h1>About Us</h1>
-      <p>This is an intro to U I CDA and the department</p>
-      <br></br>
-      <h1>Meet Our People</h1>
-      <p>Meet the people who make this place whole</p>
-      <Container bsPrefix="about-page-cards">
-        {/* Map through all available People */}
-        {People.map((person) => (
-          <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} description={person.decription}/>
-        ))}
+      <Container bsPrefix='aboutus-top-container'>
+        <img src='src/images/nic_hedlund.jpg' imgAlt='NIC Hedlund' className='aboutus-top-img'/>
       </Container>
+      <p>This is an intro to U I CDA and the department</p>
     </PageLayout>
   )
 }

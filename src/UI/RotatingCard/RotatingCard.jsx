@@ -13,7 +13,7 @@ export const RotatingCard = () => {
       <Card className="bg-dark text-white card" bsPrefix='rotating-card-container' style={{width: '100%'}}>
         <Card.Img src='src/images/lake.jpg' alt="Card image" bsPrefix='rotating-img'/>
         <Card.ImgOverlay>
-          <Card.Title className='card-title' bsPrefix='rotating-text-title'>Card title</Card.Title>
+          <Card.Title className='card-title' bsPrefix='rotating-text-title'>WELCOME</Card.Title>
           <Card.Footer bsPrefix='footer-rotating-card'>
             <Button bsPrefix='btn rotating-btn'>Learn More</Button>
             <div className='rotating-slider'>

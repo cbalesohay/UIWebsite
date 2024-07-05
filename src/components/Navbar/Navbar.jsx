@@ -25,6 +25,9 @@ export const NavbarTop = () => {
             <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
           </Container>
           <Container className='d-flex align-items-center'>
+            <Navbar.Brand><Link className='nav-link active' to='/Team'>Our Team</Link></Navbar.Brand>
+          </Container>
+          <Container className='d-flex align-items-center'>
             <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
           </Container>
           <Container className='d-flex align-items-center'>

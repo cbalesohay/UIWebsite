@@ -1,8 +1,22 @@
-.card-container{
-    margin: 20px;
-    border-width: 2px;
-    border-color: #191919 !important;
+.people-card-container{
+    background-color: rgb(25, 25, 25, 0.35);  
 }
+
+.people-card-img{
+    height: 200px;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
 .people-card-title{
     font-size: 30px;
+}
+
+.people-card-position{
+    font-size: 20px;
 }

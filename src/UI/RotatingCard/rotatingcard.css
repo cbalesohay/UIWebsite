@@ -8,7 +8,12 @@
 }
 
 .rotating-text-title{
-    color: #191919 !important;
+    
+    height: 125px;
+    width: 550px;
+    background-color: rgb(25, 25, 25, 0.5);
+    color: #F1B300 !important;
+    font-size: 100px !important;
 }
 
 .rotating-card-text{
