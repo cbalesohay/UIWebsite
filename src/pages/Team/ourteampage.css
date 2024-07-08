@@ -2,8 +2,11 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }

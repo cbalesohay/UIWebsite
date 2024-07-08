@@ -7,7 +7,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 4,
@@ -17,7 +16,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 5,
@@ -27,7 +25,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 6,
@@ -37,7 +34,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 7,
@@ -47,7 +43,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 8, 
@@ -57,7 +52,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 9,
@@ -77,7 +71,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 11,
@@ -87,7 +80,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 12,
@@ -97,7 +89,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 13,
@@ -107,7 +98,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 14,
@@ -117,7 +107,6 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
     {
         id: 15,
@@ -127,6 +116,5 @@ export const People = [
         photo: 'src/images/stockprofile.jpg',
         imgAlt: 'person',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        email: '',
     },
 ]

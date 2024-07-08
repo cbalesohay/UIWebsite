@@ -21,7 +21,7 @@ export const OurTeamPage = () => {
             <h4>Students</h4>
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Undergrade People */}
-            {People.slice(6).map((person) => (
+            {People.slice(5).map((person) => (
                 <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} position={person.position} description={person.decription}/>
             ))}
             </Container>

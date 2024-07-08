@@ -1,12 +1,12 @@
 import React from 'react'
-import { PageLayout } from '../../components/PageLayout/PageLayout'
+import { PageLayout } from '/src/components/PageLayout/PageLayout'
 import './evergreen.css'
 
 export const Evergreen = () => {
   return (
     <>
         <PageLayout>
-            
+            <h1>Evergreen</h1>
         </PageLayout>
     </>
   )

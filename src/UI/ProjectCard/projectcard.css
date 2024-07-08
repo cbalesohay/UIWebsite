@@ -1,8 +1,21 @@
+.project-link-container{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    text-decoration: none;
+}
+
 .project-card-container{
     margin: 20px;
     border-radius: 0;
     border: none;
     background-color: rgb(128, 128, 128, 0.60);
+    transition: all .5s ease-out .2s;
+}
+
+.project-card-container:hover{
+    transition: all .5s ease-in .2s;
+    opacity: 0.6;
 }
 
 .project-card-title{
@@ -14,27 +27,4 @@
     width: 100%;
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
-}
-
-/*
-Fix the button alignment when different size text is added
-*/
-.footer-project-card{
-    margin-bottom: 5px;
-}
-
-.project-btn{
-    background-color: #F1B300 !important;
-    color: #191919;
-    border-color: #F1B300 !important;
-}
-
-.project-btn:hover{
-    background-color: #FFFFFF !important;
-    color: #191919;
-}   
-
-.project-btn:active{
-    background-color: #F1B300 !important;
-    color: #191919 !important;
 }

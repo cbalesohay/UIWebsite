@@ -7,6 +7,11 @@ import { AboutUsPage } from './pages/AboutUs/AboutUsPage.jsx'
 import { OurTeamPage } from './pages/Team/OurTeamPage.jsx'
 import { RecentPublicationsPage } from './pages/RecentPublications/RecentPublicationsPage.jsx'
 import { ContactUsPage } from './pages/ContactUs/ContactUsPage.jsx'
+import { Scarecro } from './pages/IndividualProjects/Scarecro/Scarecro.jsx'
+import { Evergreen } from './pages/IndividualProjects/Evergreen/Evergreen.jsx'
+import { Aquifer } from './pages/IndividualProjects/Aquifer/Aquifer.jsx'
+import { AiData } from './pages/IndividualProjects/AIData/AiData.jsx'
+import { Robotics } from './pages/IndividualProjects/Robotics/Robotics.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -37,6 +42,26 @@ const router = createBrowserRouter([
   {
     path: "/ContactUs",
     element: <ContactUsPage/>,
+  },
+  {
+    path: "/Scarecro",
+    element: <Scarecro/>,
+  },
+  {
+    path: "/Evergreen",
+    element: <Evergreen/>,
+  },
+  {
+    path: "/Aquifer",
+    element: <Aquifer/>,
+  },
+  {
+    path: "/AiData",
+    element: <AiData/>,
+  },
+  {
+    path: "/Robotics",
+    element: <Robotics/>,
   },
 ]);
 

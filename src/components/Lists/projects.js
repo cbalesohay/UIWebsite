@@ -6,7 +6,7 @@ export const Projects = [
         url: '/src/images/dashboard.png',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: 'SCARECROPage',
+        link: '/Scarecro',
     },
     {
         id: 1,
@@ -15,7 +15,7 @@ export const Projects = [
         url: '/src/images/minifactory.webp',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: 'EvergreenPage',
+        link: '/Evergreen',
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ export const Projects = [
         url: '/src/images/aquiferpump.jpg',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: 'PumpPage',
+        link: '/Aquifer',
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export const Projects = [
         url: '/src/images/AI.webp',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: 'AiPage',
+        link: '/AiData',
     },
     {
         id: 4,
@@ -42,6 +42,6 @@ export const Projects = [
         url: '/src/images/cobot.jpg',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: 'CobotPage',
+        link: '/Robotics',
     },
 ];

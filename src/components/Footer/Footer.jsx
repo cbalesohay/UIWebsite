@@ -3,7 +3,7 @@ import './footer.css'
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import { FaSquarePhone, FaSquareEnvelope, FaSquareFacebook, FaSquareYoutube, FaSquareXTwitter, FaSquareInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaPhone, FaEnvelope, FaSquareFacebook, FaSquareYoutube, FaSquareXTwitter, FaSquareInstagram, FaLinkedin, FaLocationDot } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -51,7 +51,7 @@ export const Footer = () => {
                 <Col>
                   <Row>
                     <Col>
-                      <FaSquarePhone size={30} />
+                      <FaPhone size={20} />
                     </Col>
                     <Col>
                       <h6>(208)123-4567</h6>  
@@ -59,7 +59,7 @@ export const Footer = () => {
                   </Row>
                   <Row>
                     <Col>
-                      <FaSquareEnvelope size={30} />
+                      <FaEnvelope size={20} />
                     </Col>
                     <Col>
                       <h6>email@uidaho.edu</h6>
@@ -67,7 +67,7 @@ export const Footer = () => {
                   </Row>
                   <Row>
                     <Col>
-                      <FaSquareEnvelope size={30} />
+                      <FaLocationDot size={20} />
                     </Col>
                     <Col>
                       <h6>1000 W Garden Ave | Coeur d'Alene, ID 83854</h6>
