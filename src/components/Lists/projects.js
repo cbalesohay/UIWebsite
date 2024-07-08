@@ -37,8 +37,8 @@ export const Projects = [
     },
     {
         id: 4,
-        title: 'Cobot',
-        altImage: 'Cobot',
+        title: 'Automation and Robotics',
+        altImage: 'Robotics',
         url: '/src/images/cobot.jpg',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',

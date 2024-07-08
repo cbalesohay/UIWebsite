@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
+import Card from 'react-bootstrap/Card'
+import Placeholder from 'react-bootstrap/Placeholder'
+import Spinner from 'react-bootstrap/Spinner'
 import './peoplecard.css'
 
 export const PeopleCard = ({imgSrc, imgAlt, title, name, description, position}) => {
@@ -23,9 +24,12 @@ export const PeopleCard = ({imgSrc, imgAlt, title, name, description, position})
        {(changeCard) ?
         ''
         :
-        (!imgSrc && !imgAlt) ?
-          <Placeholder>
-            <Card.Img variant="top" style={{height: '60%'}} src="holder.js/100px180" />
+        (!imgSrc) ?
+          <Placeholder style={{height: '60%'}} bsPrefix='placeholder-card-img'>
+            <Spinner animation="border" variant='primary' role="status" style={{marginTop: '125px' }}>
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
+            {/* <Card.Img variant="top" style={{height: '60%'}} src="holder.js/100px180" /> */}
           </Placeholder>
           :
           <Card.Img bsPrefix='people-card-img' src={imgSrc} alt={imgAlt} />

@@ -1,0 +1,32 @@
+.contact-form-container{
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form-contact-select:focus{
+    border-color: none;
+    box-shadow: none;
+}
+
+.contact-input:focus{
+    border-color: none;
+    box-shadow: none;
+    
+}
+
+.submit-btn{
+    background-color: #F1B300 !important;
+    color: #191919;
+    border-color: #F1B300 !important;
+}
+
+.submit-btn:hover{
+    background-color: #FFFFFF !important;
+    color: #191919 !important;
+}
+
+.submit-btn:active{
+    background-color: #F1B300 !important;
+    color: #191919 !important;
+}

@@ -1,24 +1,26 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Placeholder from 'react-bootstrap/Placeholder';
-import Spinner from 'react-bootstrap/Spinner';
+import React from 'react'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import Placeholder from 'react-bootstrap/Placeholder'
+import Spinner from 'react-bootstrap/Spinner'
 import './projectcard.css'
 
 export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
   return (
     <>
       {/* Bootstrap Card Layout */}
-      <Card style={{ width: '25rem', height: '30rem'}} className='card' bsPrefix='card-container'>
+      <Card style={{ width: '25rem', height: '30rem'}} bsPrefix='card project-card-container'>
         {/**
          * If image and alt are unavailible, the placeholder animation = true
          */}
-        {(!imgSrc && !imgAlt) ?
-          <Placeholder>
-            <Card.Img variant="top" style={{height: '60%'}} src="holder.js/100px180" />
+        {(!imgSrc) ?
+          <Placeholder style={{height: '60%'}}>
+            <Spinner animation="border" variant='primary' role="status" style={{marginTop: '125px' }}>
+              <span className="visually-hidden">Loading...</span>
+            </Spinner>
           </Placeholder>
           :
-          <Card.Img variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='card-img'/>
+          <Card.Img variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='project-card-img'/>
         }
         <Card.Body>
           {/**
@@ -46,6 +48,8 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
             {description}
           </Card.Text>
         }
+        </Card.Body>
+        <Card.Footer bsPrefix='footer-project-card'>
           {/**
            * If buttonText is unavailible, the placeholder animation = true
            */}
@@ -58,7 +62,8 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
           :
           <Button bsPrefix='btn project-btn' type='submit' value='submit' href={link}>{buttonText}</Button>
         }
-        </Card.Body>
+        </Card.Footer>
+        
       </Card>
     </>
   );

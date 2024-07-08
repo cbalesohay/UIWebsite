@@ -1,7 +1,8 @@
-.card-container{
+.project-card-container{
     margin: 20px;
-    border-width: 2px;
-    border-color: #191919 !important;
+    border-radius: 0;
+    border: none;
+    background-color: rgb(128, 128, 128, 0.60);
 }
 
 .project-card-title{
@@ -18,19 +19,22 @@
 /*
 Fix the button alignment when different size text is added
 */
+.footer-project-card{
+    margin-bottom: 5px;
+}
 
 .project-btn{
-    background-color: #FFFFFF;
+    background-color: #F1B300 !important;
     color: #191919;
     border-color: #F1B300 !important;
 }
 
 .project-btn:hover{
-    background-color: #F1B300;
+    background-color: #FFFFFF !important;
     color: #191919;
 }   
 
 .project-btn:active{
-    background-color: #FFFFFF !important;
+    background-color: #F1B300 !important;
     color: #191919 !important;
 }
