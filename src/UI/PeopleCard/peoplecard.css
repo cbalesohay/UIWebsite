@@ -1,5 +1,10 @@
 .people-card-container{
     background-color: rgb(128, 128, 128, 0.60);  
+    transition: transform 250ms ease-in-out;
+}
+.people-card-container:hover{
+    transform: scale(1.05);
+    transition: transform 250ms ease-in-out;
 }
 
 .people-card-img{
@@ -23,10 +28,19 @@
     margin-right: auto;
 }
 
-.people-card-title{
+.people-card-title-before{
     font-size: 30px;
 }
+.people-card-title-after{
+    font-size: 30px;
+    text-align: start;
+}
 
-.people-card-position{
+.people-card-position-after{
     font-size: 20px;
+    text-align: start;
+}
+
+.people-card-description{
+    font-size: 16px;
 }

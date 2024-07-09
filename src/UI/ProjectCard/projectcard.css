@@ -9,14 +9,27 @@
     margin: 20px;
     border-radius: 0;
     border: none;
-    background-color: rgb(128, 128, 128, 0.60);
-    transition: all .5s ease-out .2s;
+    background-color: rgba(129, 128, 128, 0.6);
+    transition: transform 250ms ease-in-out;
 }
 
 .project-card-container:hover{
-    transition: all .5s ease-in .2s;
-    opacity: 0.6;
+    transform: scale(1.05);
+    transition: transform 250ms ease-in-out;
+    transform: translateY(-15px);
+    
 }
+/* .project-card-container:hover .hover-comment:before{
+    content: 'Learn More';
+}
+
+.project-card-container:hover .project-decription-text{
+    display: none;
+}
+.hover-comment{
+    color: #FFFFFF;
+    transition: transform 250ms ease-in-out;
+} */
 
 .project-card-title{
     font-size: 30px;
@@ -28,3 +41,9 @@
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }

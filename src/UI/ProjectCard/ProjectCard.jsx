@@ -5,7 +5,7 @@ import Placeholder from 'react-bootstrap/Placeholder'
 import Spinner from 'react-bootstrap/Spinner'
 import './projectcard.css'
 
-export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
+export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
   return (
     <>
       <Link href={link} bsPrefix='project-link-container'>
@@ -45,8 +45,9 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, buttonText, lin
               <Placeholder xs={6} /> <Placeholder xs={8} />
             </Placeholder>
             :
-            <Card.Text>
-              {description}
+            <Card.Text bsPrefix='project-hover-text-change'>
+              <p className='project-decription-text'>{description}</p>
+              <h1 className='hover-comment'></h1>
             </Card.Text>
           }
           </Card.Body>

@@ -7,6 +7,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import { FaSistrix } from "react-icons/fa6";
 
 
+
+
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+
 export const NavbarTop = () => {
   return (
     <>
@@ -34,85 +43,40 @@ export const NavbarTop = () => {
             <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
           </Container>
         </Container>
-        <Container className='justify-content-end'>
-          <Navbar.Brand>
-          <form className="d-flex align-items-center" role="search">
-              <input className="form-control search-bar me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <FaSistrix/>
-          </form>
-          </Navbar.Brand>
-        </Container>
       </Navbar>
+      
     </>
   )
 }
 
 
-/*
 
-This is for the expanding bar at break point (need to learn how to integrate with current theme)
-
-
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-
-{['xl'].map((expand) => (
-      <Navbar key={expand} expand={expand} className="bg-body-tertiary" fixed='top'>
-        <Container fluid>
-          <Navbar.Brand>
-            <Container>
-              <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
-            </Container>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-          <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-${expand}`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-            placement="end"
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-              <Container>
-                <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
-              </Container>
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/'>Home</Link></Navbar.Brand>
-                </Container>
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/Projects'>Projects</Link></Navbar.Brand>
-                </Container>
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/AboutUs'>About Us</Link></Navbar.Brand>
-                </Container>
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/OurPeople'>Our People</Link></Navbar.Brand>
-                </Container>
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
-                </Container>
-                <Container>
-                  <Navbar.Brand><Link className='nav-link active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
-                </Container>
-              </Nav>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-success">Search</Button>
-              </Form>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
-        </Container>
-      </Navbar>
-    ))}
-
-*/
+// {[false].map((expand) => (
+//   <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
+//     <Container fluid>
+//       <Navbar.Brand><a href='./'><img src={UILogo} alt='UI Logo'/></a></Navbar.Brand>
+//       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+//       <Navbar.Offcanvas
+//         id={`offcanvasNavbar-expand-${expand}`}
+//         aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+//         placement="end"
+//       >
+//         <Offcanvas.Header closeButton>
+//           <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+//             Menu
+//           </Offcanvas.Title>
+//         </Offcanvas.Header>
+//         <Offcanvas.Body>
+//           <Nav className="justify-content-end flex-grow-1 pe-3">
+//             <Nav.Link href="/">Home</Nav.Link>
+//             <Nav.Link href="/Projects">Projects</Nav.Link>
+//             <Nav.Link href="/AboutUs">About Us</Nav.Link>
+//             <Nav.Link href="/Team">Our Team</Nav.Link>
+//             <Nav.Link href="/RecentPublications">Recent Publications</Nav.Link>
+//             <Nav.Link href="/ContactUs">Contact Us</Nav.Link>
+//           </Nav>
+//         </Offcanvas.Body>
+//       </Navbar.Offcanvas>
+//     </Container>
+//   </Navbar>
+// ))}

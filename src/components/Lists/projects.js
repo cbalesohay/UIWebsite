@@ -37,11 +37,29 @@ export const Projects = [
     },
     {
         id: 4,
-        title: 'Automation and Robotics',
+        title: 'Valley Fever',
         altImage: 'Robotics',
         url: '/src/images/cobot.jpg',
         description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
         buttonText: 'Learn More',
-        link: '/Robotics',
+        link: '/ValleyFever',
     },
-];
+    {
+        id: 5,
+        title: 'FarmBot',
+        altImage: 'FarmBot',
+        url: 'src/images/farmbot.webp',
+        description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
+        buttonText: 'Learn More',
+        link: '/FarmBot',
+    },
+    {
+        id: 6,
+        title: 'Automation',
+        altImage: 'Automation',
+        url: 'src/images/AI.webp',
+        description: 'Mary has the description for all of the imformation about the SCARECRO project as well as the picture that go with it',
+        buttonText: 'Learn More',
+        link: '/Automation',
+    },
+]

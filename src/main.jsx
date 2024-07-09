@@ -11,7 +11,9 @@ import { Scarecro } from './pages/IndividualProjects/Scarecro/Scarecro.jsx'
 import { Evergreen } from './pages/IndividualProjects/Evergreen/Evergreen.jsx'
 import { Aquifer } from './pages/IndividualProjects/Aquifer/Aquifer.jsx'
 import { AiData } from './pages/IndividualProjects/AIData/AiData.jsx'
-import { Robotics } from './pages/IndividualProjects/Robotics/Robotics.jsx'
+import { ValleyFever } from './pages/IndividualProjects/ValleyFever/ValleyFever.jsx'
+import { FarmBot } from './pages/IndividualProjects/FarmBot/FarmBot.jsx'
+import { Automation } from './pages/IndividualProjects/Automation/Automation.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -60,8 +62,16 @@ const router = createBrowserRouter([
     element: <AiData/>,
   },
   {
-    path: "/Robotics",
-    element: <Robotics/>,
+    path: "/ValleyFever",
+    element: <ValleyFever/>,
+  },
+  {
+    path: "/FarmBot",
+    element: <FarmBot/>,
+  },
+  {
+    path: "/Automation",
+    element: <Automation/>,
   },
 ]);
 

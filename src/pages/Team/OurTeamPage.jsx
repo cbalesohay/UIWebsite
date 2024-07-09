@@ -13,16 +13,16 @@ export const OurTeamPage = () => {
             <h4>Full-Time Staff</h4>
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Full-Time People */}
-            {People.slice(0, 5).map((person) => (
-                <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} position={person.position} description={person.decription}/>
+            {People.slice(0, 4).map((person) => (
+                <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} firstName={person.firstName} lastName={person.lastName} position={person.position} description={person.decription}/>
             ))}
             </Container>
             <br></br>
             <h4>Students</h4>
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Undergrade People */}
-            {People.slice(5).map((person) => (
-                <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} name={person.name} position={person.position} description={person.decription}/>
+            {People.slice(4).map((person) => (
+                <PeopleCard key={person.id} imgSrc={person.photo} imgAlt={person.imgAlt} title={person.title} firstName={person.firstName} lastName={person.lastName} position={person.position} description={person.decription}/>
             ))}
             </Container>
         </PageLayout>
