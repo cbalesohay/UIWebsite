@@ -79,7 +79,7 @@ export const Footer = () => {
             <Col style={{margin: 'auto'}}>
               <Row>
                 <Col>
-                  <span><a href='https://www.youtube.com/' className='footer-icons'><FaSquareFacebook size={40} /></a></span>
+                  <span><a href='https://www.facebook.com/' className='footer-icons'><FaSquareFacebook size={40} /></a></span>
                   <span><a href='https://www.x.com/' className='footer-icons'><FaSquareXTwitter size={40} /></a></span>
                   <span><a href='https://www.instagram.com/' className='footer-icons'><FaSquareInstagram size={40} /></a></span>
                   <span><a href='https://www.youtube.com/' className='footer-icons'><FaSquareYoutube size={40} /></a></span>
