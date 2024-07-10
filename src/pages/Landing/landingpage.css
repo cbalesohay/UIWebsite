@@ -1,3 +1,14 @@
+.landing-rotating-card-container{
+    max-height: 700px !important;
+    margin-top: 0px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 .landing-page-cards{
     display: flex;
     flex-wrap: wrap;
@@ -8,14 +19,4 @@
     background-repeat:   no-repeat;
     background-position: center center;
     margin-bottom: 30px;
-}
-
-.rotating-card-container{
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
 }

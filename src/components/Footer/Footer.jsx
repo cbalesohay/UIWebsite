@@ -10,7 +10,7 @@ export const Footer = () => {
     <>
       <Card data-bs-theme="dark" bsPrefix='card '>
         <Card.Header>
-          <img src='src/images/UofI_Main_White_Text.png'/>
+          <img src='src/images/UofI_Main_White_Text.png' className='footer-ui-logo'/>
         </Card.Header>
         <Card.Body>
           <Row sm={3}>

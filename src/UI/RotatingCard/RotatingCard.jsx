@@ -8,13 +8,17 @@ export const RotatingCard = () => {
     <>
       {/**
        * Need to add Rotating picture functionality,
-       * Fix Button, layout, img height
+       * Fix Button, layout, img
        */}
-      <Card className="bg-dark text-white card" bsPrefix='rotating-card-container' style={{width: '100%'}}>
-        <Card.Img src='src/images/lake.jpg' alt="Card image" bsPrefix='rotating-img'/>
+      <Card className="text-white card" bsPrefix='rotating-card-container'>
+          <Card.Header style={{margin: '0px', padding: '0'}} bsPrefix='rotating-img'>
+            <Card.Img src='src/images/lake.jpg' alt="Card image image-fluid" bsPrefix='rotating-img'/>
+          </Card.Header>
         <Card.ImgOverlay>
           <Card.Title className='card-title' bsPrefix='rotating-text-title'>WELCOME</Card.Title>
-          <Card.Footer bsPrefix='footer-rotating-card'>
+          
+        </Card.ImgOverlay>
+        <Card.Footer bsPrefix='footer-rotating-card'>
             <Button bsPrefix='btn rotating-btn'>Learn More</Button>
             <div className='rotating-slider'>
 
@@ -25,7 +29,6 @@ export const RotatingCard = () => {
               <span className='dot'></span>
             </div>
           </Card.Footer>
-        </Card.ImgOverlay>
       </Card>
     </>
   )

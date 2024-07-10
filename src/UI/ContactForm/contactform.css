@@ -1,8 +1,17 @@
 .contact-form-container{
     display: block;
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
 }
+
+@media (width <= 1050px) {
+    .contact-form-container{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
 
 .form-contact-select:focus{
     border-color: none;
