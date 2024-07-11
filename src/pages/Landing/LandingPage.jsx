@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Pages } from '../../components/Lists/pages'
 import { RotatingCard } from '../../UI/RotatingCard/RotatingCard'
@@ -7,6 +8,10 @@ import './landingpage.css'
 import { Container } from 'react-bootstrap'
 
 export const LandingPage = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PageLayout>
       <Container bsPrefix='landing-rotating-card-container'>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
+import CardLink from 'react-bootstrap/CardLink'
 import Link from 'react-bootstrap/CardLink'
 import Placeholder from 'react-bootstrap/Placeholder'
 import Spinner from 'react-bootstrap/Spinner'
@@ -8,9 +9,9 @@ import './projectcard.css'
 export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
   return (
     <>
-      <Link href={link} bsPrefix='project-link-container'>
+      {/* <Link href={link} bsPrefix='project-link-container'> */}
         {/* Bootstrap Card Layout */}
-        <Card href={link} style={{ width: '25rem', height: '30rem', cursor: 'pointer'}} bsPrefix='card project-card-container'>
+        <CardLink href={link} style={{ width: '25rem', height: '30rem', cursor: 'pointer', textDecoration: 'none'}} bsPrefix='card project-card-container'>
           {/**
            * If image and alt are unavailible, the placeholder animation = true
            */}
@@ -45,14 +46,18 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
               <Placeholder xs={6} /> <Placeholder xs={8} />
             </Placeholder>
             :
+            /**
+             * this is throwing an error in browser <div> / <p> cannot go in here
+             */
             <Card.Text bsPrefix='project-hover-text-change'>
-              <p className='project-decription-text'>{description}</p>
-              <h1 className='hover-comment'></h1>
+              {/* <p className='project-decription-text'>{description}</p> */}
+              {description}
+              {/* <h1 className='hover-comment'></h1> */}
             </Card.Text>
           }
           </Card.Body>
-        </Card>
-      </Link>
+        </CardLink>
+      {/* </Link> */}
     </>
   );
 }

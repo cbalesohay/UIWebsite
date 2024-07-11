@@ -1,10 +1,15 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { ProjectCard } from '../../UI/ProjectCard/ProjectCard'
 import { Projects } from '../../components/Lists/projects'
 import './projectpage.css'
 
 export const ProjectsPage = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <PageLayout>
         <h1>Project Page</h1>

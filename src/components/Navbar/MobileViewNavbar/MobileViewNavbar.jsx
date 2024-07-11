@@ -11,11 +11,11 @@ export const MobileViewNavbar = () => {
     const [expanded, setExpanded] = useState(false);
   return (
     <>
-        <Navbar expand={expanded} sticky='top' className="bg-body-tertiary" style={{height: '60px', width: 'auto', padding: '0px'}}>
-            <Container fluid>
-                /*
+        <Navbar expand={expanded} sticky='top' className="bg-body-tertiary" style={{height: '100%', width: '100%', padding: '0px'}}>
+            <Container>
+                {/* /*
                 * Fix Background of I image for mobile view (still has white background on it from cropping)
-                 */
+                 */}
             <Navbar.Brand><Link to={'/'} className='uinavlogo'><img src='src/images/UI_I_logo.jpg' alt='UI Logo'/></Link></Navbar.Brand>
                 <Navbar.Toggle onClick={() => setExpanded(expanded)}/>
                 <Navbar.Offcanvas

@@ -1,9 +1,14 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Papers } from '../../components/Lists/papers'
 import { Presentations } from '../../components/Lists/presentations'
 
 export const RecentPublicationsPage = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <PageLayout>
       <h1>Recent Publications</h1>
@@ -11,12 +16,12 @@ export const RecentPublicationsPage = () => {
       <h3>Conference Papers</h3>
       {/* Map through all availible Papers */}
       {Papers.map((paper) => (
-            <p>{paper.description}</p>
+            <p key={paper.id}>{paper.description}</p>
           ))}
       <h3>Conference Presentations</h3>
       {/* Map through all availible Presentations */}
       {Presentations.map((present) => (
-            <p>{present.description}</p>
+            <p key={present.id}>{present.description}</p>
           ))}
     </PageLayout>
   )

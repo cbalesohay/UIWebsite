@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Container } from 'react-bootstrap'
 import { People } from '../../components/Lists/people'
@@ -6,6 +7,10 @@ import { PeopleCard } from '../../UI/PeopleCard/PeopleCard'
 import './ourteampage.css'
 
 export const OurTeamPage = () => {
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
         <PageLayout>
