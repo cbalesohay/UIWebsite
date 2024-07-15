@@ -11,6 +11,7 @@
     border: none;
     background-color: rgba(129, 128, 128, 0.6);
     transition: transform 250ms ease-in-out;
+    box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
 }
 
 .project-card-container:hover{

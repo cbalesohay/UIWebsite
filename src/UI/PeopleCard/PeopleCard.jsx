@@ -17,7 +17,7 @@ export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, descript
   return (
     <>
       {/* Bootstrap Card Layout */}
-      <Card onClick={() => setChangeCard(!changeCard)} style={{width: '25rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '0', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container'>
+      <Card onClick={() => setChangeCard(!changeCard)} style={{width: '25rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container'>
         {/**
        * If image and alt are unavailible, the placeholder animation = true
        */}
@@ -54,9 +54,7 @@ export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, descript
               </Placeholder>
               :
               <Card.Title bsPrefix='people-card-title-before'>
-                {title + ' ' + firstName}
-                <br></br>
-                {lastName}
+                {title + ' ' + firstName + ' ' + lastName}
               </Card.Title>
           }
           {/**

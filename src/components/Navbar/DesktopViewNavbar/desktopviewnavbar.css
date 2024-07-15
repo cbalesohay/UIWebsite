@@ -1,3 +1,12 @@
 .uinavlogo img{
-    height: 50px;
+    height: 35px !important;
+}
+
+.view-links-navbar{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+}
+
+.view-links-navbar:hover{
+    color: rgb(255, 255, 255);
 }
