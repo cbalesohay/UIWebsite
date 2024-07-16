@@ -3,6 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0px;
+    margin: 10px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;

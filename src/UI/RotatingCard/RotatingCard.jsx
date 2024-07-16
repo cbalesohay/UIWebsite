@@ -1,5 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import './rotatingcard.css'
 
 export const RotatingCard = () => {
@@ -10,23 +12,23 @@ export const RotatingCard = () => {
        */}
      
       <div className='carousel-container'>
-        <Carousel touch='yes' style={{width: '100%', height: '100%', maxHeight: '600px', overflow: 'hidden'}}>
+        <Carousel touch='yes' prevIcon={<FaAngleLeft size={50} />} nextIcon={<FaAngleRight size={50} />}>
           <Carousel.Item interval={5000} >
-            <img src='src/images/lake.jpg' className="d-block w-100" alt="First slide"></img>
+            <Image style={{width: '100%', maxHeight: '600px', minHeight: '250px', objectFit: 'fill'}} src='src/images/lake.jpg' alt="First slide" fluid/>
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <img src='src/images/aboutus.jpg' className="d-block w-100"></img>
+            <Image style={{width: '100%', maxHeight: '600px', minHeight: '250px', objectFit: 'fill'}} src='src/images/tree.jpg' alt="Second slide" fluid/>
             <Carousel.Caption>
               <h3>Second slide label</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
-            <img src='src/images/UI-Joe-grey.jpg' className="d-block w-100"></img>
+            <Image style={{width: '100%', maxHeight: '600px', minHeight: '250px', objectFit: 'fill'}} src='src/images/snow.jpg' alt="Second slide" fluid/>
             <Carousel.Caption>
               <h3>Third slide label</h3>
               <p>

@@ -3,6 +3,7 @@
     transition: transform 250ms ease-in-out;
     box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
     transition: 0.8s;
+    border-radius: 10px !important;
 }
 .people-card-container:hover{
     transform: scale(1.05);

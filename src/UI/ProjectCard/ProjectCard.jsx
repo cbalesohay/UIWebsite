@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card'
 import CardLink from 'react-bootstrap/CardLink'
-import Link from 'react-bootstrap/CardLink'
 import Placeholder from 'react-bootstrap/Placeholder'
 import Spinner from 'react-bootstrap/Spinner'
+import Image from 'react-bootstrap/Image';
 import './projectcard.css'
 
 export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
@@ -22,7 +22,7 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
               </Spinner>
             </Placeholder>
             :
-            <Card.Img variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='project-card-img'/>
+            <Image variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='img project-card-img'/>
           }
           <Card.Body>
             {/**

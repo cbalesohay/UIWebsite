@@ -2,8 +2,7 @@
     width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     padding: 0px;
     margin: 10px;
     margin-bottom: 30px;

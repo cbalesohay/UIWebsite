@@ -7,7 +7,7 @@
 
 .project-card-container{
     margin: 20px;
-    border-radius: 0;
+    border-radius: 0px;
     border: none;
     background-color: rgba(129, 128, 128, 0.6);
     transition: transform 250ms ease-in-out;
@@ -39,6 +39,7 @@
 .project-card-img{
     height: 270px;
     width: 100%;
+    
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
