@@ -16,15 +16,56 @@ export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, descript
 
   return (
     <>
-      {/* Bootstrap Card Layout */}
-      <Card onClick={() => setChangeCard(!changeCard)} style={{width: '25rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container'>
-        {/**
-       * If image and alt are unavailible, the placeholder animation = true
-       */}
-       {(changeCard) ?
-        ''
-        :
-        (!imgSrc) ?
+      {(changeCard) ?
+        /* Bootstrap Card Layout */
+        <Card onClick={() => setChangeCard(!changeCard)} style={{width: '25rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container'>
+          <Card.Body>
+            {/**
+            * If title and name are unavailible, the placeholder animation = true
+            */}
+            
+            {(!firstName) ?
+              <Placeholder as={Card.Title} animation="glow">
+                <Placeholder xs={6} />
+              </Placeholder>
+              :
+              <Card.Title bsPrefix='people-card-title-after'>
+                {title + ' ' + firstName + ' ' + lastName}
+              </Card.Title>}
+                          
+            {/**
+            * If title and name are unavailible, the placeholder animation = true
+            */}
+            {(!position) ?
+            <Placeholder as={Card.Title} animation="glow" style={{margin: '0px', textAlign: 'start'}}>
+              <Placeholder xs={4} />
+            </Placeholder>
+            :
+            <Card.Title bsPrefix='people-card-position-after'>
+              {position}
+            </Card.Title>}
+                          
+            {/**
+            * If description is unavailible, the placeholder animation = true
+            */}  
+            {(!description) ?
+            <Placeholder as={Card.Text} animation="glow">
+              <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
+              <Placeholder xs={6} /> <Placeholder xs={8} />
+            </Placeholder>
+            :
+            <Card.Text bsPrefix='people-card-description'>
+              {description}  
+            </Card.Text>}
+                    
+          </Card.Body>
+        </Card>
+      :
+        <Card onClick={() => setChangeCard(!changeCard)} style={{width: '25rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container'>
+          {/**
+          * If image and alt are unavailible, the placeholder animation = true
+          */}
+          {(!imgSrc) ?
           <Placeholder style={{height: '60%'}} bsPrefix='placeholder-card-img'>
             <Spinner animation="border" variant='primary' role="status" style={{marginTop: '125px' }}>
               <span className="visually-hidden">Loading...</span>
@@ -32,72 +73,35 @@ export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, descript
             {/* <Card.Img variant="top" style={{height: '60%'}} src="holder.js/100px180" /> */}
           </Placeholder>
           :
-          <Card.Img bsPrefix='people-card-img' src={imgSrc} alt={imgAlt} />
-      }
-        <Card.Body>
-          {/**
-          * If title and name are unavailible, the placeholder animation = true
-          */}
-          {(changeCard) ?
-          (!firstName) ?
-            <Placeholder as={Card.Title} animation="glow">
-              <Placeholder xs={6} />
-            </Placeholder>
-            :
-            <Card.Title bsPrefix='people-card-title-after'>
-              {title + ' ' + firstName + ' ' + lastName}
-            </Card.Title>
-          :
-            (!firstName) ?
+          <Card.Img bsPrefix='people-card-img' src={imgSrc} alt={imgAlt} />}
+
+          <Card.Body>
+            {/**
+            * If title and name are unavailible, the placeholder animation = true
+            */}
+            {(!firstName) ?
               <Placeholder as={Card.Title} animation="glow">
                 <Placeholder xs={6} />
               </Placeholder>
               :
               <Card.Title bsPrefix='people-card-title-before'>
                 {title + ' ' + firstName + ' ' + lastName}
-              </Card.Title>
-          }
-          {/**
-          * If title and name are unavailible, the placeholder animation = true
-          */}
-          {(changeCard) ?
-              (!position) ?
-              <Placeholder as={Card.Title} animation="glow" style={{margin: '0px', textAlign: 'start'}}>
-                <Placeholder xs={4} />
-              </Placeholder>
-              :
-              <Card.Title bsPrefix='people-card-position-after'>
-                {position}
-              </Card.Title>
+              </Card.Title>}
+            
+            {/**
+            * If title and name are unavailible, the placeholder animation = true
+            */}
+            {(!position) ?
+            <Placeholder as={Card.Title} animation="glow">
+              <Placeholder xs={4} />
+            </Placeholder>
             :
-              (!position) ?
-              <Placeholder as={Card.Title} animation="glow">
-                <Placeholder xs={4} />
-              </Placeholder>
-              :
-              <Card.Title bsPrefix='people-card-position-before'>
-                {position}
-              </Card.Title>
-           
-        }
-          {/**
-          * If description is unavailible, the placeholder animation = true
-          */}
-          {(!changeCard) ?
-            ''
-            :
-            (!description) ?
-              <Placeholder as={Card.Text} animation="glow">
-                <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
-                <Placeholder xs={6} /> <Placeholder xs={8} />
-              </Placeholder>
-              :
-              <Card.Text bsPrefix='people-card-description'>
-                {description}  
-              </Card.Text>
-          }
-        </Card.Body>
-      </Card>
+            <Card.Title bsPrefix='people-card-position-before'>
+              {position}
+            </Card.Title>}
+          </Card.Body>
+        </Card>
+      }
     </>
   );
 }

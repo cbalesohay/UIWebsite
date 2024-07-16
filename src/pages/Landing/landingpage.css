@@ -1,4 +1,4 @@
-.landing-rotating-card-container{
+/* .landing-rotating-card-container{
     max-height: 700px !important;
     margin-top: 0px;
     overflow: hidden;
@@ -7,7 +7,7 @@
     border-top-right-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-}
+} */
 
 .landing-page-cards{
     display: flex;

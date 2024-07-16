@@ -2,11 +2,14 @@
     background-color: rgb(128, 128, 128, 0.60);  
     transition: transform 250ms ease-in-out;
     box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
+    transition: 0.8s;
 }
 .people-card-container:hover{
     transform: scale(1.05);
     transition: transform 250ms ease-in-out;
 }
+
+
 
 .people-card-img{
     height: 200px;
