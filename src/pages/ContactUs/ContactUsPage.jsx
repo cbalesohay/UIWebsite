@@ -13,7 +13,7 @@ export const ContactUsPage = () => {
   }, []);
   return (
     <PageLayout>
-      <h1>Contact Us</h1>
+      <h1 className='contact-title-text'>CONTACT US</h1>
       <ContactForm/>
       <GoogleMap/>
     </PageLayout>

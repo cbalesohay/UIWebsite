@@ -1,6 +1,6 @@
 
 
-.landing-title-text {
+.landing-title-text{
     background-color: #F1B300 ;
     color: #191919;
     font-size: 25px;
@@ -15,10 +15,14 @@
     flex-direction: column;
 }
 
-.landing-intro-text {
+.landing-intro-title-text{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.landing-intro-text{
     width: 80%;
     font-size: 20px;
-    padding: 15px;
     text-align: start;
 }
 

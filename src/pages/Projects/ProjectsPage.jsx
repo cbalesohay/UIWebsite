@@ -13,9 +13,9 @@ export const ProjectsPage = () => {
   }, []);
   return (
       <PageLayout>
-        <Container bsPrefix='project-header-container'>
-          <h1>Project Page</h1>
-          <p>This should be an introduction to the project page *Still need to figure out layout for this*</p>
+        <h1 className='project-title-text'>PROJECTS</h1>
+        <Container bsPrefix='project-intro-container'>
+        <p>This should be an introduction to the project page *Still need to figure out layout for this*</p>
         </Container>
         <Container bsPrefix='project-layout'>
           {/* Map through all availible Projects */}

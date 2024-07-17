@@ -13,6 +13,15 @@
     user-select: none; /* Standard syntax */
 }
 
+.team-title-text{
+    background-color: #F1B300 ;
+    color: #191919;
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+
 @media screen and (max-width: 600px) {
     .ourteam-cards{
         width: 100%;

@@ -7,3 +7,10 @@
     height: 600px;
 }
 
+.about-title-text{
+    background-color: #F1B300 ;
+    color: #191919;
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 0px;
+}

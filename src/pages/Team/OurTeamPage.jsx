@@ -14,7 +14,7 @@ export const OurTeamPage = () => {
   return (
     <>
         <PageLayout>
-            <h1>Meet out Team</h1>
+            <h1 className='team-title-text'>OUR TEAM</h1>
             <h4>Full-Time Staff</h4>
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Full-Time People */}

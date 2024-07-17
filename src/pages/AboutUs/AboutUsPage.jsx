@@ -11,7 +11,7 @@ export const AboutUsPage = () => {
   }, []);
   return (
     <PageLayout>
-      <h1>About Us</h1>
+      <h1 className='about-title-text'>ABOUT US</h1>
       <Container bsPrefix='aboutus-top-container'>
         <img src='src/images/nic_hedlund.jpg' alt='NIC Hedlund' className='aboutus-top-img'/>
       </Container>
