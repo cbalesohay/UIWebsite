@@ -10,7 +10,7 @@ import './desktopviewfooter.css'
 export const DesktopViewFooter = () => {
   return (
     <>
-        <Card data-bs-theme="dark" bsPrefix='card '>
+        <Card data-bs-theme="dark" bsPrefix='card desktop-view-footer-container'>
             <Card.Body>
                 <Container>
                     <Row sm={3}>

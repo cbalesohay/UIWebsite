@@ -1,22 +1,37 @@
-/* .landing-rotating-card-container{
-    max-height: 700px !important;
-    margin-top: 0px;
-    overflow: hidden;
-    margin-bottom: 30px;
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-} */
 
-.landing-page-cards{
+
+.landing-title-text {
+    background-color: #F1B300 ;
+    color: #191919;
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.landing-intro-text-container{
+    background-color: #FFFFFF;
+    color: #191919;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-intro-text {
+    width: 80%;
+    font-size: 20px;
+    padding: 15px;
+    text-align: start;
+}
+
+.landing-page-cards-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(128, 128, 128, 0.60);
+    background-color: #191919; 
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;
     margin-bottom: 30px;
 }
+
+/* background-color: rgb(128, 128, 128, 0.60); */
