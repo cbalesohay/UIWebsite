@@ -3,7 +3,7 @@
 .landing-title-text{
     background-color: #F1B300 ;
     color: #191919;
-    font-size: 25px;
+    font-size: 900;
     padding: 15px;
     margin-bottom: 0px;
 }
@@ -16,13 +16,14 @@
 }
 
 .landing-intro-title-text{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .landing-intro-text{
     width: 80%;
-    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: 400;
     text-align: start;
 }
 

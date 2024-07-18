@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Papers } from '../../components/Lists/papers'
 import { Presentations } from '../../components/Lists/presentations'
-import { Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import './recentpublications.css'
 
 export const RecentPublicationsPage = () => {
@@ -19,14 +19,20 @@ export const RecentPublicationsPage = () => {
       <Container style={{textAlign: 'start'}}>
         {/* Map through all availible Papers */}
         {Papers.map((paper) => (
-          <p key={paper.id}>{paper.description}</p>
+          <div>
+            <p key={paper.id}>{paper.description}</p>
+            <Button href={paper.link}>Link</Button>
+          </div>
         ))}
       </Container>
       <h3>Conference Presentations</h3>
       <Container style={{textAlign: 'start'}}>
         {/* Map through all availible Presentations */}
         {Presentations.map((present) => (
-          <p key={present.id}>{present.description}</p>
+          <div>
+            <p key={present.id}>{present.description}</p>
+            <Button href={present.link}>Link</Button>
+          </div>
         ))}
       </Container>
     </PageLayout>

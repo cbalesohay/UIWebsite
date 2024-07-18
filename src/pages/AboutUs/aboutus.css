@@ -1,6 +1,7 @@
 .aboutus-top-container{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .aboutus-top-img{
@@ -10,7 +11,7 @@
 .about-title-text{
     background-color: #F1B300 ;
     color: #191919;
-    font-size: 25px;
+    font-size: 900;
     padding: 15px;
     margin-bottom: 0px;
 }

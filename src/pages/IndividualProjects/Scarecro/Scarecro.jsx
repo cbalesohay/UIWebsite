@@ -1,12 +1,15 @@
 import React from 'react'
 import { PageLayout } from '/src/components/PageLayout/PageLayout'
+import { Container } from 'react-bootstrap'
 import './scarecro.css'
 
 export const Scarecro = () => {
   return (
     <>
         <PageLayout>
+          <Container>
             <h1>Scarecro</h1>
+            <img src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt='Scarecro' className='scarecro-img'/>
             <h6>The SCARECRO System (an only mildly-forced acronym that stands for Sensor Collection and Remote Environment Care Reasoning Operation) was developed by the University of Idaho and Laurel Grove Wine Farm to be a flexible and robust wireless sensor network for precision agriculture applications. The system is designed to be easy to modify to incorporate a very wide variety of off-the-shelf sensors into a full collection system and data visualization and analysis suite. The system can be configured in many ways.</h6>
             <h3>Components</h3>
             <p>Sensors: Currently supported sensors include: S5 BLE temp/humidity beacon, KKM K6P BLE temp/humidity beacon, minew S1 BLE temp/humidity beacon, Atlas Gravity pH sensor, Atlas Ezo pH sensor, Meter Teros 10 soil moisture sensor, Switchdoc Labs Weather Rack 2 Sensor, Renogy Wanderer Solar Controller, BMP280 air pressure sensor, Switchdoc Labs Thunderboard Sensor, Switchdoc Labs AQI sensor, and the Tempest Weather Station.</p>
@@ -22,6 +25,14 @@ export const Scarecro = () => {
             <p>Sandpoint Organic Agriculture Center: The University of Idaho SOAC center is a heritage orchard with over 60 varieties of apple. The deployment has one gateway, 1 Data Gator, and 2 weather racks. Future work at this deployment includes integrating dendrometers and using the information for degree day modeling.</p>
             <h3>Support</h3>
             <p>The SCARECRO system has received a wide variety of university, government, and private industry support. Funding agencies and partners have included: Laurel Grove Wine Farm, Sandpoint Organic Agriculture Center, University of Idaho Office of Undergraduate Research, NASA Idaho Space Grant Consortium, Idaho Higher Education Research Council, and Susan Rumble.</p>
+            <img src='src/images/ScarecroPhotos/SOAC_Lacey.jpg' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/SOAC_install_Malik_Aaron.jpg' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/SOAC_Garrett.jpg' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/SOAC_Aaron_Malik.jpg' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/SCARECRO_Diagram.png' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/Laurel_Grove.jpg' className='scarecro-img'/>
+            <img src='src/images/ScarecroPhotos/Scarecro_transparentldpi.png' className='scarecro-img'/>
+          </Container>
         </PageLayout>
     </>
   )
