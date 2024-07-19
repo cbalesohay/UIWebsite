@@ -39,4 +39,15 @@
     margin-bottom: 30px;
 }
 
+
+.learn-more-button-landing:active{
+    background-color: #5E48FF !important;
+    color: #FFFFFF !important;
+}
+
+.learn-more-button-landing:hover{
+    background-color: #FFFFFF !important;
+    color: #5E48FF !important;
+}
+
 /* background-color: rgb(128, 128, 128, 0.60); */

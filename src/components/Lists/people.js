@@ -15,7 +15,7 @@ export const People = [
         firstName: 'Robert',
         lastName: 'Rinker',
         title: 'Dr.',
-        position: '',
+        position: 'Director',
         photo: 'src/images/ProfilePhotos/robert-rinker.jpg',
         imgAlt: 'personal photo',
         decription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',

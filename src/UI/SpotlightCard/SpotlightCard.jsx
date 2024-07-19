@@ -14,7 +14,7 @@ export const SpotlightCard = () => {
             <Link to={{
               pathname: '/Projects'
             }}>
-              <Image style={{width: '100%', maxHeight: '650px', minHeight: '250px', objectFit: 'fill'}} src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt="First slide" fluid/>
+              <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt="First slide" fluid/>
             </Link>
             <Carousel.Caption>
               <h3>First slide label</h3>
@@ -25,7 +25,7 @@ export const SpotlightCard = () => {
             <Link to={{
               pathname: '/Projects'
             }}>
-              <Image style={{width: '100%', maxHeight: '650px', minHeight: '250px', objectFit: 'fill'}} src='src/images/EvergreenPhotos/large-group.jpg' alt="Second slide" fluid/>
+              <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/EvergreenPhotos/large-group.jpg' alt="Second slide" fluid/>
             </Link>
             <Carousel.Caption>
               <h3>Second slide label</h3>
@@ -36,7 +36,7 @@ export const SpotlightCard = () => {
             <Link to={{
               pathname: '/Projects'
             }}>
-              <Image style={{width: '100%', maxHeight: '650px', minHeight: '250px', objectFit: 'fill'}} src='src/images/FarmBotPhotos/farmbot-plant-view.jpg' alt="Second slide" fluid/>
+              <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/FarmBotPhotos/farmbot-plant-view.jpg' alt="Second slide" fluid/>
             </Link>
             <Carousel.Caption>
               <h3>Third slide label</h3>
