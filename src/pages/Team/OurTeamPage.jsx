@@ -4,16 +4,15 @@ import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Container } from 'react-bootstrap'
 import { People } from '../../components/Lists/people'
 import { PeopleCard } from '../../UI/PeopleCard/PeopleCard'
+import { ScrollToTop } from '../../components/ScrollToTop/ScrollToTop'
 import './ourteampage.css'
 
 export const OurTeamPage = () => {
-  useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
+  
   return (
     <>
         <PageLayout>
+          <ScrollToTop/>
             <h1 className='team-title-text'>OUR TEAM</h1>
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Full-Time People */}

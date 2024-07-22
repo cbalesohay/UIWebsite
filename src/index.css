@@ -21,3 +21,15 @@
   margin: 0px;
   padding: 0px;
 }
+
+/*
+To prevent mobile horizontal scroll
+*/
+
+html, body{
+  overflow-x: hidden;
+}
+
+body{
+  position: relative;
+}

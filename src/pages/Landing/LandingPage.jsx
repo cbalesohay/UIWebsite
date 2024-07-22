@@ -5,7 +5,9 @@ import { Pages } from '../../components/Lists/pages'
 import { SpotlightCard } from '../../UI/SpotlightCard/SpotlightCard'
 import { MenuCard } from '../../UI/MenuCard/MenuCard'
 import { Button, Col, Container, Row } from 'react-bootstrap'
+import { FaArrowRight } from "react-icons/fa6";
 import './landingpage.css'
+import { Link } from 'react-router-dom'
 
 
 export const LandingPage = () => {
@@ -32,7 +34,9 @@ export const LandingPage = () => {
         </Row>
         <Row>
           <Col style={{justifyContent: 'end', alignItems: 'end', display: 'flex', paddingRight: '50px', marginBottom: '20px'}}>
-            <Button className='col-2' style={{borderColor: '#5E48FF', backgroundColor: '#5E48FF', color: '#FFFFFF', width: '120px'}} bsPrefix='btn learn-more-button-landing' type='submit' value='submit' href='/AboutUs'>Learn More</Button>  
+            <Link to='/AboutUs'>
+              <Button className='col-2' style={{borderColor: '#5E48FF', backgroundColor: '#5E48FF', color: '#FFFFFF', width: '120px'}} bsPrefix='btn learn-more-button-landing' type='submit' value='submit'>Learn More <FaArrowRight /></Button>  
+            </Link>
           </Col>
         </Row>
       </Container>

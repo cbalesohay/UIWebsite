@@ -14,7 +14,7 @@ export const ContactUsPage = () => {
   return (
     <PageLayout>
       <h1 className='contact-title-text'>CONTACT US</h1>
-      <ContactForm/>
+      <ContactForm />
       <GoogleMap/>
     </PageLayout>
   )

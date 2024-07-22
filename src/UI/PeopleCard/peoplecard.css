@@ -10,6 +10,16 @@
     transition: transform 250ms ease-in-out;
 }
 
+/*
+No animation on mobile
+*/
+@media (width <= 600px) {
+    .people-card-container:hover{
+        transform: none;
+        transition: none;
+    }
+}
+
 
 
 .people-card-img{

@@ -59,19 +59,22 @@ export const DesktopViewFooter = () => {
                                     <Row style={{margin: '10px'}}>
                                         <Col>
                                             <FaPhone size={20} style={{margin: '10px'}}/>
-                                            <h6>(208)123-4567</h6>
+                                            <br></br>
+                                            <Link to='tel:2081234567' style={{textDecoration: 'none', color: '#FFFFFF'}}>(208)123-4567</Link>
                                         </Col>
                                     </Row>
                                     <Row style={{margin: '10px'}}>
                                         <Col>
                                             <FaEnvelope size={20} style={{margin: '10px'}}/>
-                                            <h6>email@uidaho.edu</h6>
+                                            <br></br>
+                                            <Link to='mailto:email@uidaho.edu' style={{textDecoration: 'none', color: '#FFFFFF'}}>email@uidaho.edu</Link>
                                         </Col>
                                     </Row>
                                     <Row style={{margin: '10px'}}>
                                         <Col>
                                             <FaLocationDot size={20} style={{margin: '10px'}}/>
-                                            <h6>1000 W Garden Ave | Coeur d'Alene, ID 83854</h6>
+                                            <br></br>
+                                            <Link to='geo:47.67519378549674,-116.79614685893004' style={{textDecoration: 'none', color: '#FFFFFF'}}>1000 W Garden Ave | Coeur d'Alene, ID 83854</Link>
                                         </Col>
                                     </Row>
                                 </Col>

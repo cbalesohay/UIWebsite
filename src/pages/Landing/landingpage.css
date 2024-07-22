@@ -13,6 +13,7 @@
     color: #191919;
     display: flex;
     flex-direction: column;
+    width: 99%;
 }
 
 .landing-intro-title-text{

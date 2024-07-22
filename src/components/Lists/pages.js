@@ -29,7 +29,7 @@ export const Pages = [
     {
         id: 3,
         title: 'Our Team',
-        url: 'src/images/group-photo-bootcamp-2024.jpeg',
+        url: 'src/images/General/group-photo-bootcamp-2024.jpeg',
         imgAlt: 'preview',
         description: 'Come learn about the people that make up the team!',
         link: '/Team',
@@ -47,7 +47,7 @@ export const Pages = [
     {
         id: 5,
         title: 'Contact Us',
-        url: 'src/images/Shovic_Squad_April_Fools.jpg',
+        url: 'src/images/General/Shovic_Squad_April_Fools.jpg',
         imgAlt: 'preview',
         description: 'If you have any questions feel free to contact us!',
         link: '/Contactus',

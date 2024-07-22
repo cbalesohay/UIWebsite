@@ -14,6 +14,7 @@ import { AiData } from './pages/IndividualProjects/AIData/AiData.jsx'
 import { ValleyFever } from './pages/IndividualProjects/ValleyFever/ValleyFever.jsx'
 import { FarmBot } from './pages/IndividualProjects/FarmBot/FarmBot.jsx'
 import { Automation } from './pages/IndividualProjects/Automation/Automation.jsx'
+import { ErrorPage } from './components/ErrorPage/ErrorPage.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -24,54 +25,67 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Projects",
     element: <ProjectsPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/AboutUs",
     element: <AboutUsPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Team",
-    element: <OurTeamPage/>
+    element: <OurTeamPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/RecentPublications",
     element: <RecentPublicationsPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/ContactUs",
     element: <ContactUsPage/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Scarecro",
     element: <Scarecro/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Evergreen",
     element: <Evergreen/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Aquifer",
     element: <Aquifer/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/AiData",
     element: <AiData/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/ValleyFever",
     element: <ValleyFever/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/FarmBot",
     element: <FarmBot/>,
+    errorElement: <ErrorPage/>,
   },
   {
     path: "/Automation",
     element: <Automation/>,
+    errorElement: <ErrorPage/>,
   },
 ]);
 

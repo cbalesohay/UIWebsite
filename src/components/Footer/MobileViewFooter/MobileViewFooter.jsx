@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { Container } from 'react-bootstrap';
 import { FaPhone, FaEnvelope, FaSquareFacebook, FaSquareYoutube, FaSquareXTwitter, FaSquareInstagram, FaLinkedin, FaLocationDot } from "react-icons/fa6";
 import './mobileviewfooter.css'
+import { Link } from 'react-router-dom';
 
 export const MobileViewFooter = () => {
   return (
@@ -25,7 +26,7 @@ export const MobileViewFooter = () => {
                               </Row>
                               <Row>
                                 <Col>
-                                  <h6>(208)123-4567</h6>  
+                                  <Link to='tel:2081234567' style={{textDecoration: 'none', color: '#FFFFFF'}}>(208)123-4567</Link>
                                 </Col>
                               </Row>
                             </Col>
@@ -39,7 +40,7 @@ export const MobileViewFooter = () => {
                               </Row>
                               <Row>
                                 <Col>
-                                  <h6>email@uidaho.edu</h6>
+                                  <Link to='mailto:email@uidaho.edu' style={{textDecoration: 'none', color: '#FFFFFF'}}>email@uidaho.edu</Link>
                                 </Col>
                               </Row>
                             </Col>
@@ -53,7 +54,7 @@ export const MobileViewFooter = () => {
                               </Row>
                               <Row>
                                 <Col>
-                                  <h6>1000 W Garden Ave | Coeur d'Alene, ID 83854</h6>    
+                                  <Link to='geo:47.67519378549674,-116.79614685893004' style={{textDecoration: 'none', color: '#FFFFFF'}}>1000 W Garden Ave | Coeur d'Alene, ID 83854</Link>
                                 </Col>
                               </Row>
                             </Col>
