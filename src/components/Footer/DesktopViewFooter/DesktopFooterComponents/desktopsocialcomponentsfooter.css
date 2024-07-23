@@ -1,0 +1,8 @@
+.desktop-view-icons-footer{
+    color: rgb(128, 128, 128);
+}
+
+.desktop-view-icons-footer:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}

@@ -3,7 +3,8 @@ import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { ContactForm } from '../../UI/ContactForm/ContactForm'
 import { GoogleMap } from '../../UI/GoogleMap/GoogleMap'
-import './contactus.css'
+import { Container } from 'react-bootstrap'
+import './contactuspage.css'
 
 
 export const ContactUsPage = () => {
@@ -14,8 +15,10 @@ export const ContactUsPage = () => {
   return (
     <PageLayout>
       <h1 className='contact-title-text'>CONTACT US</h1>
-      <ContactForm />
-      <GoogleMap/>
+      <Container>
+        <ContactForm />
+        <GoogleMap/>
+      </Container>
     </PageLayout>
   )
 }

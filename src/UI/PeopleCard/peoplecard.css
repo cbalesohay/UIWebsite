@@ -1,13 +1,13 @@
 .people-card-container{
     background-color: rgb(128, 128, 128, 0.60);  
-    transition: transform 250ms ease-in-out;
+    transition: transform 200ms ease-in-out;
     box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
-    transition: 0.8s;
+    transition: 0.5s;
     border-radius: 10px !important;
 }
 .people-card-container:hover{
-    transform: scale(1.05);
-    transition: transform 250ms ease-in-out;
+    transform: scale(.95);
+    transition: transform 200ms ease-in-out;
 }
 
 /*

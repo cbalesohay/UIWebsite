@@ -22,7 +22,7 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
               </Spinner>
             </Placeholder>
             :
-            <Image variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='img project-card-img'/>
+            <Image variant="top" style={{height: '60%', width: '100%', borderTopLeftRadius: '0px', borderTopRightRadius: '0px', borderBottomLeftRadius: '0px', borderBottomRightRadius: '0px'}} src={imgSrc} alt={imgAlt}/>
           }
           <Card.Body>
             {/**

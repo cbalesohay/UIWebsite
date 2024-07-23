@@ -2,7 +2,7 @@
 
 # Project Report
 
-This project was assigned to me to learn, build, and deploy a React website for CIIR. The educational outcomes of this assignment has been the learning and integration of React, Bootstrap, React-icons with a deployment on AWS servers. I wanted to integrate the layout to be able to easily modify contents within the site without disrupting the layout. Titles, photos, labels, positions, descriptions, and names are set to default spinners or placeholders if those sections are not added. This implamentation allows future updaters to spot errors quickly and effectivly.
+This project was assigned to me to learn, build, and deploy a React website for CIIR. The educational outcomes of this assignment has been the learning and integration of React, Bootstrap, React-icons with a deployment on AWS with Docker. I wanted to integrate the layout to be able to easily modify contents within the site without disrupting the layout. Titles, photos, labels, positions, descriptions, and names are set to default spinners or placeholders if those sections are not added. This implamentation allows future updaters to spot errors quickly and effectivly.
 
 
 # Documentation

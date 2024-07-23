@@ -16,9 +16,9 @@ export const SpotlightCard = () => {
             }}>
               <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt="First slide" fluid/>
             </Link>
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Carousel.Caption style={{backgroundColor: 'rgb(25, 25, 25, .7)', maxWidth: '500px', margin: '0 auto'}}>
+              <h3>Scarecro</h3>
+              <p>Learn More About This Project!</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
@@ -27,9 +27,9 @@ export const SpotlightCard = () => {
             }}>
               <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/EvergreenPhotos/large-group.jpg' alt="Second slide" fluid/>
             </Link>
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption style={{backgroundColor: 'rgb(25, 25, 25, .7)', maxWidth: '500px', margin: '0 auto'}}>
+              <h3>Project Evergreen</h3>
+              <p>Learn More About This Project!</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item interval={5000}>
@@ -38,11 +38,9 @@ export const SpotlightCard = () => {
             }}>
               <Image style={{width: '100%', maxHeight: '650px', minHeight: '330px', objectFit: 'cover'}} src='src/images/FarmBotPhotos/farmbot-plant-view.jpg' alt="Second slide" fluid/>
             </Link>
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+            <Carousel.Caption style={{backgroundColor: 'rgb(25, 25, 25, .7)', maxWidth: '500px', margin: '0 auto'}}>
+              <h3>FarmBot</h3>
+              <p>Learn More About This Project!</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

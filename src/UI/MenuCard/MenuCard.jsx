@@ -9,7 +9,7 @@ export const MenuCard = ({imgSrc, imgAlt, title, description, buttonText, link})
   return (
     <>
       {/* Bootstrap Card Layout */}
-      <Card style={{ width: '25rem', height: '30rem' }} bsPrefix='card menu-card-container'>
+      <Card style={{ width: '25rem', height: '30rem', margin: '20px', border: 'none', backgroundColor: '#FFFFFF', borderRadius: '0px', boxShadow: '5px 5px 5px rgb(255, 255, 255, .3)'}}>
           {/**
            * If image and alt are unavailible, the placeholder animation = true
            */}
@@ -21,7 +21,7 @@ export const MenuCard = ({imgSrc, imgAlt, title, description, buttonText, link})
             {/* <Card.Img variant="top" style={{height: '60%'}} src=''/> */}
           </Placeholder>
           :
-          <Card.Img variant="top" style={{height: '60%'}} src={imgSrc} alt={imgAlt} bsPrefix='menu-card-img'/>
+          <Card.Img variant="top" style={{height: '60%', width: '100%'}} src={imgSrc} alt={imgAlt} bsPrefix='menu-card-img'/>
         }
         <Card.Body>
           {/**
@@ -32,7 +32,7 @@ export const MenuCard = ({imgSrc, imgAlt, title, description, buttonText, link})
             <Placeholder xs={6} />
           </Placeholder>
           :
-          <Card.Title bsPrefix='menu-card-title'>
+          <Card.Title style={{fontSize: '30px'}}>
             {title}
           </Card.Title>
         }

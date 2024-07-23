@@ -34,13 +34,6 @@ No animation on mobile
     font-size: 30px;
 }
 
-.project-card-img{
-    height: 270px;
-    width: 100%;
-    border-bottom-left-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-}
-
 @media (prefers-reduced-motion: reduce) {
     .btn {
       transition: none;

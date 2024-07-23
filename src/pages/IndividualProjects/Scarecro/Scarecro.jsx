@@ -8,7 +8,7 @@ export const Scarecro = () => {
     <>
         <PageLayout>
           <h1 className='scarecro-title-text'>SCARECRO</h1>
-          <Container fluid>
+          <Container>
             <img src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt='Scarecro' className='scarecro-img'/>
             <h5>The SCARECRO System (an only mildly-forced acronym that stands for Sensor Collection and Remote Environment Care Reasoning Operation) was developed by the University of Idaho and Laurel Grove Wine Farm to be a flexible and robust wireless sensor network for precision agriculture applications. The system is designed to be easy to modify to incorporate a very wide variety of off-the-shelf sensors into a full collection system and data visualization and analysis suite. The system can be configured in many ways.</h5>
             <br></br>

@@ -1,12 +1,8 @@
-.uinavlogo img{
-    height: 70px;
-}
-
-.view-links-navbar{
+.desktop-view-links-footer{
     color: rgb(128, 128, 128);
     text-decoration: none;
 }
 
-.view-links-navbar:hover{
+.desktop-view-links-footer:hover{
     color: rgb(255, 255, 255);
 }
