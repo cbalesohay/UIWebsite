@@ -13,7 +13,7 @@ export const RecentPublicationsPage = () => {
   }, []);
   return (
     <PageLayout>
-      <h1 className='recent-title-text'>RECENT PUBLICATIONS</h1>
+      {/* <h1 className='recent-title-text'>RECENT PUBLICATIONS</h1> */}
       <p>Take a look at some of the recent accomplishments our team has made</p>
       <h3>Conference Papers</h3>
       <Container style={{textAlign: 'start'}}>

@@ -8,6 +8,16 @@
     height: 600px;
 }
 
+.about-text-style{
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
 .about-title-text{
     background-color: #F1B300 ;
     color: #191919;

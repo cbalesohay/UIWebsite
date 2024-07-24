@@ -9,7 +9,7 @@ export const SpotlightCard = () => {
   return (
     <>
       <div className='carousel-container'>
-        <Carousel  touch='yes' prevIcon={<FaAngleLeft size={50}  />} nextIcon={<FaAngleRight size={50} />}>
+        <Carousel  touch='yes' prevIcon={<FaAngleLeft size={50} />} nextIcon={<FaAngleRight size={50} />}>
           <Carousel.Item interval={5000} >
             <Link to={{
               pathname: '/Projects'

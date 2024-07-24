@@ -13,7 +13,7 @@ export const OurTeamPage = () => {
     <>
         <PageLayout>
           <ScrollToTop/>
-            <h1 className='team-title-text'>OUR TEAM</h1>
+            {/* <h1 className='team-title-text'>OUR TEAM</h1> */}
             <Container bsPrefix="ourteam-cards">
             {/* Map through all Full-Time People */}
             {People.map((person) => (
