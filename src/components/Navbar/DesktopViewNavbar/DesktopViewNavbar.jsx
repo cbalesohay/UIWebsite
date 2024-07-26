@@ -20,7 +20,7 @@ export const DesktopViewNavbar = () => {
     {/**
      * Need to fix sticky top so that it is only active when the toggle is active
      */}
-    <Navbar sticky='top' data-bs-theme="dark" expand="lg"  className="bg-body-tertiary fixed-top" >
+    <Navbar sticky='top' data-bs-theme="dark" expand="lg"  className="bg-body-tertiary">
       <Container>
         <Navbar.Brand><Link to={'/'} className='uinavlogo'><img src={UILogo} alt='UI Logo'/></Link></Navbar.Brand>
         <Navbar.Toggle  onClick={handleShow}><FaBars size={25} /></Navbar.Toggle>

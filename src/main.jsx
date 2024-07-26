@@ -24,69 +24,77 @@ import './index.css'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <LandingPage/>,
+    element: <App/>,
     errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: '/',
+        element: <LandingPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Projects",
+        element: <ProjectsPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/AboutUs",
+        element: <AboutUsPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Team",
+        element: <OurTeamPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/RecentPublications",
+        element: <RecentPublicationsPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/ContactUs",
+        element: <ContactUsPage/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Scarecro",
+        element: <Scarecro/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Evergreen",
+        element: <Evergreen/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Aquifer",
+        element: <Aquifer/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/AiData",
+        element: <AiData/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/ValleyFever",
+        element: <ValleyFever/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/FarmBot",
+        element: <FarmBot/>,
+        errorElement: <ErrorPage/>,
+      },
+      {
+        path: "/Automation",
+        element: <Automation/>,
+        errorElement: <ErrorPage/>,
+      },
+    ]
   },
-  {
-    path: "/Projects",
-    element: <ProjectsPage/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/AboutUs",
-    element: <AboutUsPage/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/Team",
-    element: <OurTeamPage/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/RecentPublications",
-    element: <RecentPublicationsPage/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/ContactUs",
-    element: <ContactUsPage/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/Scarecro",
-    element: <Scarecro/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/Evergreen",
-    element: <Evergreen/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/Aquifer",
-    element: <Aquifer/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/AiData",
-    element: <AiData/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/ValleyFever",
-    element: <ValleyFever/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/FarmBot",
-    element: <FarmBot/>,
-    errorElement: <ErrorPage/>,
-  },
-  {
-    path: "/Automation",
-    element: <Automation/>,
-    errorElement: <ErrorPage/>,
-  },
+  
 ]);
 
 

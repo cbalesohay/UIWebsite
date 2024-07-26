@@ -5,7 +5,7 @@ export const Pages = [
         url: '/src/images/landingpage.jpg',
         imgAlt: 'preview',
         description: '',
-        link: '',
+        link: '/',
         buttonText: 'View',
     },
     {

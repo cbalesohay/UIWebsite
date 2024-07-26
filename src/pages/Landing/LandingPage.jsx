@@ -11,20 +11,20 @@ import { Link } from 'react-router-dom'
 
 
 export const LandingPage = () => {
-  useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   // Scroll to the top when the component mounts
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <PageLayout>
-        <h1 className='landing-title-text'>Center for Intelligent Industrial Robotics (CIIR)</h1>    
+          
       <Container bsPrefix='landing-rotaing-image-container'>
         <SpotlightCard/>
       </Container>
       <Container bsPrefix='landing-intro-text-container'>
         <Row>
           <Col>
-            <p className='landing-intro-title-text'>*Change*</p>  
+            <h1 className='landing-title-text'>Center for Intelligent Industrial Robotics (CIIR)</h1>
           </Col>
         </Row>
         <Row>

@@ -7,10 +7,10 @@ import { Button, Container } from 'react-bootstrap'
 import './recentpublications.css'
 
 export const RecentPublicationsPage = () => {
-  useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   // Scroll to the top when the component mounts
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <PageLayout>
       {/* <h1 className='recent-title-text'>RECENT PUBLICATIONS</h1> */}

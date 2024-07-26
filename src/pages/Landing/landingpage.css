@@ -1,9 +1,8 @@
 .landing-title-text{
     background-color: #F1B300 ;
     color: #191919;
-    font-size: 900;
+    font-weight: 900;
     padding: 15px;
-    margin-bottom: 0px;
 }
 
 .landing-intro-text-container{
@@ -11,12 +10,6 @@
     color: #191919;
     display: flex;
     flex-direction: column;
-    width: 99%;
-}
-
-.landing-intro-title-text{
-    font-size: 2rem;
-    font-weight: 700;
 }
 
 .landing-intro-text{

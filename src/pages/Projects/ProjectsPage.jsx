@@ -8,10 +8,10 @@ import Image from 'react-bootstrap/Image';
 import './projectpage.css'
 
 export const ProjectsPage = () => {
-  useEffect(() => {
-    // Scroll to the top when the component mounts
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   // Scroll to the top when the component mounts
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
       <PageLayout>
         {/* <h1 className='project-title-text'>PROJECTS</h1> */}
