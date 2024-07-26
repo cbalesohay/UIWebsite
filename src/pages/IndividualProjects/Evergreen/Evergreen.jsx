@@ -7,7 +7,7 @@ export const Evergreen = () => {
   return (
     <>
       <PageLayout>
-        <h1 className='evergreen-title-text'>EVERGREEN</h1>
+        <h1>EVERGREEN</h1>
         <Container>
           <img src='src/images/EvergreenPhotos/group-photo-evergreen.jpg' alt='Evergreen Photo' className='evergreen-img'/>
           <p>Funded by the United States Forest Service and the USDA, Project Evergreen is developing an autonomous weeding robot for National Forest tree seedling nurseries. Led by graduate student Garrett Wells, the project is designed to help nurseries increase their production under the REPLANT act to help United States reforestation efforts.</p>

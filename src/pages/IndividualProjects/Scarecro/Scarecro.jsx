@@ -7,8 +7,8 @@ export const Scarecro = () => {
   return (
     <>
         <PageLayout>
-          <h1 className='scarecro-title-text'>SCARECRO</h1>
           <Container>
+            <img src='src/images/ScarecroPhotos/Scarecro_transparentldpi.png' className='scarecro-img'/>
             <img src='src/images/ScarecroPhotos/SOAC_Marz_Lacey.jpg' alt='Scarecro' className='scarecro-img'/>
             <h5>The SCARECRO System (an only mildly-forced acronym that stands for Sensor Collection and Remote Environment Care Reasoning Operation) was developed by the University of Idaho and Laurel Grove Wine Farm to be a flexible and robust wireless sensor network for precision agriculture applications. The system is designed to be easy to modify to incorporate a very wide variety of off-the-shelf sensors into a full collection system and data visualization and analysis suite. The system can be configured in many ways.</h5>
             <br></br>
@@ -22,7 +22,6 @@ export const Scarecro = () => {
                 <p className='scarecro-main-text'>Data Gators are custom-built PCBs on top of an ESP32 microcontroller that can take information from a variety of wired and wireless sensors. Data Gators have analog, digital, SPI, and I2C wired interfaces and can also listen for bluetooth sensors. These are highly power efficient and low cost devices that read sensors and send information upstream. Data Gators run on solar power.</p>
                 <p className='scarecro-subheaders'>Gateways:</p>
                 <p className='scarecro-main-text'>Gateways are implemented via low-cost raspberry pi computers which listen for short and long range sensors on wired interfaces, 433 Mhz radio, Bluetooth, and MQTT Wifi. The Gateways also take readings from the Data Gator devices. Gateways send the information to the middle agent. Gateways also run on solar power.</p>
-                
               </Col>
               <Col xs={{span: 12, order: 1}} md={{span: 6, order: 2}}>
                 <img src='src/images/ScarecroPhotos/SOAC_install_Malik_Aaron.jpg' className='scarecro-img'/>  
@@ -79,7 +78,6 @@ export const Scarecro = () => {
                 <img src='src/images/ScarecroPhotos/Laurel_Grove.jpg' className='scarecro-img'/>  
               </Col>
             </Row>
-            <img src='src/images/ScarecroPhotos/Scarecro_transparentldpi.png' className='scarecro-img'/>
           </Container>
         </PageLayout>
     </>

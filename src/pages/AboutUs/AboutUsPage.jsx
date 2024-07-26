@@ -16,7 +16,7 @@ export const AboutUsPage = () => {
     <PageLayout>
       {/* <h1 className='about-title-text'>ABOUT US</h1> */}
       <Container fluid style={{padding: '0px', position: 'relative'}}>
-        <Image responsive style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/nic_hedlund.jpg' alt='NIC Hedlund' fluid/>
+        <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/nic_hedlund.jpg' alt='NIC Hedlund' fluid/>
         <h1 className='about-text-style'>ABOUT US</h1>
       </Container>
       <Container style={{textAlign: 'start', paddingBottom: '10px', paddingTop: '10px'}}>

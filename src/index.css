@@ -27,6 +27,7 @@ To prevent mobile horizontal scroll
 */
 
 html, body{
+  padding-top: 48px;
   overflow-x: hidden;
 }
 

@@ -1,7 +1,10 @@
 .recent-title-text{
-    background-color: #F1B300 ;
-    color: #191919;
-    font-size: 900;
+    font-weight: 900;
     padding: 15px;
     margin-bottom: 0px;
+}
+
+.sub-title-recent-pubs{
+    font-weight: 700;
+    text-align: start;
 }
