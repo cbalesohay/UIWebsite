@@ -1,3 +1,35 @@
 #root {
   text-align: center;
 }
+
+.btn-slide-animation{
+  display: inline-block;
+  letter-spacing: 1px;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.btn-slide-animation-lupine:active{
+  background-color: #5E48FF !important;
+  color: #FFFFFF !important;
+}
+
+.btn-slide-animation-lupine:hover{
+  background-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 200px 0 0 0 #5E48FF !important;
+  transition: 1.0s;
+}
+
+.btn-slide-animation-pride-gold:active{
+  background-color: #F1B300 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-slide-animation-pride-gold:hover{
+  background-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+  box-shadow: inset 200px 0 0 0 #F1B300 !important;
+  transition: 1.0s;
+}

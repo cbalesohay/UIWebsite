@@ -1,3 +1,8 @@
+.landing-main-container{
+    height: 100vh;
+    margin-bottom: 0px !important;
+}
+
 .landing-title-text{
     background-color: #F1B300 ;
     color: #191919;
@@ -5,40 +10,52 @@
     padding: 15px;
 }
 
-.landing-intro-text-container{
-    background-color: #FFFFFF;
-    color: #191919;
-    display: flex;
-    flex-direction: column;
+/* .landing-rotaing-image-container{
+    height: 100vh;
+} */
+
+@media screen and (max-width: 700px) {
+    .landing-rotaing-image-container{
+        max-height: 100vh;
+    }
 }
 
-.landing-intro-text{
-    width: 80%;
-    font-size: 1.25rem;
+.landing-intro-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.landing-intro-text1{
+    
+    font-size: 4rem;
     font-weight: 400;
-    text-align: start;
+}
+
+.landing-intro-text2{
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 35px;
 }
 
 .landing-page-cards-container{
     display: flex;
-    flex-wrap: wrap;
+  
     justify-content: center;
-    align-items: center;
+  
     background-color: #191919; 
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
-    background-position: center center;
+
     margin-bottom: 30px;
 }
 
-.learn-more-button-landing:active{
-    background-color: #5E48FF !important;
-    color: #FFFFFF !important;
-}
+@media screen and (max-width: 700px) {
+    .landing-intro-text-container{
+        
+        height: 45vh;
 
-.learn-more-button-landing:hover{
-    background-color: #FFFFFF !important;
-    color: #5E48FF !important;
+    }
+    .landing-intro-text1, .landing-intro-text2{
+        font-size: 3rem;
+    }
 }
-
-/* background-color: rgb(128, 128, 128, 0.60); */

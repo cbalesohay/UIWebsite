@@ -3,19 +3,5 @@ Fix the button alignment when different size text is added
 */
 
 .footer-menu-btn{
-    margin-bottom: 5px;
-}
-
-.menu-btn{
-    background-color: #F1B300 !important;
-    border-color: #F1B300 !important;
-}
-
-.menu-btn:hover{
-    background-color: #FFFFFF !important;
-    color: #191919 !important;
-}
-.menu-btn:active{
-    background-color: #F1B300 !important;
-    color: #191919 !important;
+    margin-bottom: 20px;
 }

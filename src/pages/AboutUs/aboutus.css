@@ -29,13 +29,3 @@
     padding: 15px;
     margin-bottom: 0px;
 }
-
-.learn-more-button-aboutus:active{
-    background-color: #5E48FF !important;
-    color: #FFFFFF !important;
-}
-
-.learn-more-button-aboutus:hover{
-    background-color: #FFFFFF !important;
-    color: #5E48FF !important;
-}

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import UILogo from '/src/images/General/UofI_Main_White_Text.png'
+import UILogo from '/src/images/General/UI_Main_gold_and_white_horizontal_RGB.png'
 import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -20,7 +20,8 @@ export const DesktopViewNavbar = () => {
     {/**
      * Need to fix sticky top so that it is only active when the toggle is active
      */}
-    <Navbar data-bs-theme="dark" expand="lg"  className="bg-body-tertiary fixed-top">
+    {/* <Navbar data-bs-theme="dark" expand="lg" className='' bsPrefix='navbar-main'> */}
+    <Navbar bg="dark" data-bs-theme="dark" expand="lg"  className="bg-body-tertiary fixed-top" style={{boxShadow: '5px 5px 5px rgb(0, 0, 0, .3)'}}>
       <Container>
         <Navbar.Brand><Link to={'/'} className='uinavlogo'><img src={UILogo} alt='UI Logo'/></Link></Navbar.Brand>
         <Navbar.Toggle  onClick={handleShow}><FaBars size={25} /></Navbar.Toggle>
