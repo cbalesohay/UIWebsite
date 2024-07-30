@@ -41,7 +41,7 @@ export const LandingPage = () => {
         <Row>
           <Col style={{justifyContent: 'center', alignItems: 'center', display: 'flex', paddingLeft: '20%'}}>
             <Link to='/AboutUs'>
-              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>Find Out Why  <FaArrowRight /></Button>
+              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>Find Out Why  <FaArrowRight size={22} /></Button>
             </Link>
           </Col>
         </Row>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { PageLayout } from '/src/components/PageLayout/PageLayout'
-import { Container, Row, Col } from 'react-bootstrap'
-
+import { Container, Row, Col, Button } from 'react-bootstrap'
+import { FaArrowLeft } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 import './farmbot.css'
 
 export const FarmBot = () => {
@@ -27,6 +28,11 @@ export const FarmBot = () => {
             </Col>
           </Row>
           <br></br>
+          <Container style={{textAlign: 'start', paddingBottom: '10px'}}>
+            <Link to='/Projects'>
+              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
+            </Link>
+          </Container>
         </Container>
       </PageLayout>
     </>

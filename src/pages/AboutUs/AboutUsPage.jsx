@@ -24,7 +24,7 @@ export const AboutUsPage = () => {
       </Container>
       <Container style={{textAlign: 'end', paddingBottom: '10px'}}>
         <Link to='/Team'>
-          <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>View our staff!  <FaArrowRight /></Button>
+          <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>View our staff!  <FaArrowRight size={22} /></Button>
         </Link>
       </Container>
     </PageLayout>

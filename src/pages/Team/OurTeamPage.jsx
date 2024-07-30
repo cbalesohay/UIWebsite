@@ -16,7 +16,7 @@ export const OurTeamPage = () => {
           <ScrollToTop/>
           {/* <h1 className='team-title-text'>OUR TEAM</h1> */}
           <Container fluid style={{padding: '0px', position: 'relative'}}>
-            <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='/src/images/General/Shovic_Squad_April_Fools.jpg' alt='NIC Hedlund' fluid/>
+            <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/group-photo-bootcamp-2024.jpeg' alt='NIC Hedlund' fluid/>
             <h1 className='picture-text-style'>Our Team</h1>
           </Container>
           <Container bsPrefix="ourteam-cards">

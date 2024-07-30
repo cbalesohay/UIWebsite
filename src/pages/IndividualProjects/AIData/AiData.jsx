@@ -1,6 +1,8 @@
 import React from 'react'
 import { PageLayout } from '/src/components/PageLayout/PageLayout'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
+import { FaArrowLeft } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 import './aidata.css'
 
 export const AiData = () => {
@@ -17,6 +19,11 @@ export const AiData = () => {
           <p>The Center has worked and/or researched several projects in this area including determining defects from process data, automatic plank defect inspection checking, frost predictor analysis, 3D model to scan inspection, and weed detection.</p>
           <h3>Support:</h3>
           <p>This area received support from the NASA Idaho Space Grant Consortium, Wapiti Consulting, Schweitzer Engineering Labs, Wildwood Grilling, H&H Molds, Laurel Grove Wine Farm, and the University of Idaho Office of Undergraduate Research.</p>
+          <Container style={{textAlign: 'start', paddingBottom: '10px'}}>
+            <Link to='/Projects'>
+              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
+            </Link>
+          </Container>
         </Container>
       </PageLayout>
     </>

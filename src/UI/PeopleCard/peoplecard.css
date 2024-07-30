@@ -1,12 +1,12 @@
 .people-card-container-front{
-    background-color: rgb(128, 128, 128, 0.60);  
+    background-color: rgb(128, 128, 128, 0.80);  
     transition: transform 200ms ease-in-out;
     box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
     transition: 0.5s;
     position: relative;
 }
 .people-card-container-back{
-    background-color: rgb(128, 128, 128, 0.90);  
+    background-color: rgb(128, 128, 128, 0.60);  
     transition: transform 50ms ease-in-out;
     box-shadow: 5px 5px 5px rgb(25, 25, 25, .5);
     transition: 0.1s;
