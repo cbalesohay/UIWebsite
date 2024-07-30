@@ -18,7 +18,7 @@ export const ContactUsPage = () => {
       {/* <h1 className='contact-title-text'>CONTACT US</h1> */}
       <Container fluid style={{padding: '0px', position: 'relative'}}>
         <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/View_Hedlund.jpg' alt='View' fluid/>
-        <h1 className='contact-text-style'>CONTACT US</h1>
+        <h1 className='picture-text-style'>CONTACT US</h1>
       </Container>
       <Container>
         <ContactForm />

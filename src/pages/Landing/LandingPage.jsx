@@ -22,7 +22,7 @@ export const LandingPage = () => {
           <SpotlightCard/>
         </Container>
         
-        <div className='landing-intro-text-container'>
+        <Container bsPrefix='landing-intro-text-container'>
         <Row>
           <Col>
             <h1 className='landing-title-text'>Center for Intelligent Industrial Robotics (CIIR)</h1>
@@ -45,9 +45,7 @@ export const LandingPage = () => {
             </Link>
           </Col>
         </Row>
-        </div>
-        {/* <Container bsPrefix='landing-intro-text-container'> */}
-        {/* </Container> */}
+        </Container>
 
       </Container>
 

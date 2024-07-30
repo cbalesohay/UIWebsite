@@ -33,3 +33,18 @@
   box-shadow: inset 200px 0 0 0 #F1B300 !important;
   transition: 1.0s;
 }
+
+.picture-text-style{
+  font-size: 45px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: fit-content;
+  bottom: 15%;
+  color: #FFFFFF;
+  font-weight: 900;
+  background-color: rgb(25, 25, 25, 0.75);
+}

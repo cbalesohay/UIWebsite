@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import UILogo from '/src/images/General/UI_Main_gold_and_white_horizontal_RGB.png'
+import UILogo from '/src/images/General/UofI_Main_White_Text.png'
 import { Link } from 'react-router-dom'
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';

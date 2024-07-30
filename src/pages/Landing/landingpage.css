@@ -1,5 +1,5 @@
 .landing-main-container{
-    height: 100vh;
+    min-height: 100vh;
     margin-bottom: 0px !important;
 }
 
@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-bottom: 20px;
 }
 
 .landing-intro-text1{
@@ -41,13 +42,21 @@
 
 .landing-page-cards-container{
     display: flex;
-  
+    flex-wrap: wrap;
     justify-content: center;
-  
     background-color: #191919; 
-
     margin-bottom: 30px;
 }
+
+/* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919; 
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+margin-bottom: 30px; */
 
 @media screen and (max-width: 700px) {
     .landing-intro-text-container{
