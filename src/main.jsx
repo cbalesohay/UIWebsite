@@ -5,7 +5,7 @@ import { LandingPage } from './pages/Landing/LandingPage.jsx'
 import { ProjectsPage } from './pages/Projects/ProjectsPage.jsx'
 import { AboutUsPage } from './pages/AboutUs/AboutUsPage.jsx'
 import { OurTeamPage } from './pages/Team/OurTeamPage.jsx'
-import { RecentPublicationsPage } from './pages/RecentPublications/RecentPublicationsPage.jsx'
+import { PublicationsPage } from './pages/Publications/PublicationsPage.jsx'
 import { ContactUsPage } from './pages/ContactUs/ContactUsPage.jsx'
 import { Scarecro } from './pages/IndividualProjects/Scarecro/Scarecro.jsx'
 import { Evergreen } from './pages/IndividualProjects/Evergreen/Evergreen.jsx'
@@ -48,8 +48,8 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage/>,
       },
       {
-        path: "/RecentPublications",
-        element: <RecentPublicationsPage/>,
+        path: "/Publications",
+        element: <PublicationsPage/>,
         errorElement: <ErrorPage/>,
       },
       {

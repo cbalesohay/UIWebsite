@@ -44,7 +44,7 @@ export const DesktopViewNavbar = () => {
               <Navbar.Brand><Link className='view-links-navbar active' to='/Projects'>Projects</Link></Navbar.Brand>
               <Navbar.Brand><Link className='view-links-navbar active' to='/AboutUs'>About Us</Link></Navbar.Brand>
               <Navbar.Brand><Link className='view-links-navbar active' to='/Team'>Our Team</Link></Navbar.Brand>
-              <Navbar.Brand><Link className='view-links-navbar active' to='/RecentPublications'>Recent Publications</Link></Navbar.Brand>
+              <Navbar.Brand><Link className='view-links-navbar active' to='/Publications'>Publications</Link></Navbar.Brand>
               <Navbar.Brand><Link className='view-links-navbar active' to='/ContactUs'>Contact Us</Link></Navbar.Brand>
             </Nav>
           </Offcanvas.Body>

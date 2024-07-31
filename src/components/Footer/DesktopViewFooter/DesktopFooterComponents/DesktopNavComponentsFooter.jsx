@@ -32,7 +32,7 @@ export const DesktopNavComponentsFooter = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <Link className='desktop-view-links-footer active' to='/RecentPublications'>Recent Publications</Link>
+                        <Link className='desktop-view-links-footer active' to='/Publications'>Publications</Link>
                     </Col>
                 </Row>
                 <Row>

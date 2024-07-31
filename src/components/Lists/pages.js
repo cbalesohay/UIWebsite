@@ -37,11 +37,11 @@ export const Pages = [
     },
     {
         id: 4,
-        title: 'Recent Publications',
+        title: 'Publications',
         url: 'src/images/EvergreenPhotos/evergreen-robot.jpg',
         imgAlt: 'preview',
         description: 'Learn about our most recent publications!',
-        link: '/Recentpublications',
+        link: '/Publications',
         buttonText: 'View',
     },
     {
