@@ -3,10 +3,16 @@ import './errorpage.css'
 import { Container } from "react-bootstrap";
 
 export const ErrorPage = () => {
-    const error = useRouteError();
-    console.error(error);
+  const error = useRouteError();
+  console.error(error);
+  const errorStyle ={
+    position: 'fixed',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)'
+  }
   return (
-    <Container style={{position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}>
+    <Container style={errorStyle}>
       <h1>Oops!</h1>
       <p>Looks like you found a broken link...</p>
       <p>Please do use a favor and report the <a href="/ContactUs">problem</a></p>

@@ -8,9 +8,15 @@ import { MobileContactComponentsFooter } from './MobileFooterComponents/MobileCo
 import './mobileviewfooter.css'
 
 export const MobileViewFooter = () => {
+  const mobileFooterStyle = {
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
+    borderBottomLeftRadius: '0px',
+    borderBottomRightRadius: '0px'
+}
   return (
     <>
-      <Card data-bs-theme="dark" style={{borderTopLeftRadius: '0px', borderTopRightRadius: '0px', borderBottomLeftRadius: '0px', borderBottomRightRadius: '0px'}}>
+      <Card data-bs-theme="dark" style={mobileFooterStyle}>
         <Card.Body>
           <Container>
             <Row sm={1}>

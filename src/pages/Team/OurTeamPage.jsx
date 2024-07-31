@@ -1,5 +1,4 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Container } from 'react-bootstrap'
 import { People } from '../../components/Lists/people'
@@ -9,14 +8,19 @@ import Image from 'react-bootstrap/Image';
 import './ourteampage.css'
 
 export const OurTeamPage = () => {
-  
+  const topImageStyle = {
+    width: '100%',
+    maxHeight: '600px',
+    minHeight: '330px',
+    objectFit: 'cover'
+  }
   return (
     <>
         <PageLayout>
           <ScrollToTop/>
           {/* <h1 className='team-title-text'>OUR TEAM</h1> */}
           <Container fluid style={{padding: '0px', position: 'relative'}}>
-            <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/group-photo-bootcamp-2024.jpeg' alt='NIC Hedlund' fluid/>
+            <Image style={topImageStyle} src='src/images/General/group-photo-bootcamp-2024.jpeg' alt='NIC Hedlund' fluid/>
             <h1 className='picture-text-style'>Our Team</h1>
           </Container>
           <Container bsPrefix="ourteam-cards">

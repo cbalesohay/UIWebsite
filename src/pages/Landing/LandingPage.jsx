@@ -1,28 +1,29 @@
 import React from 'react'
-import { useEffect } from 'react'
 import { PageLayout } from '../../components/PageLayout/PageLayout'
 import { Pages } from '../../components/Lists/pages'
 import { SpotlightCard } from '../../UI/SpotlightCard/SpotlightCard'
 import { MenuCard } from '../../UI/MenuCard/MenuCard'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { FaArrowRight } from "react-icons/fa6";
-import './landingpage.css'
 import { Link } from 'react-router-dom'
+import './landingpage.css'
 
 
 export const LandingPage = () => {
-  // useEffect(() => {
-  //   // Scroll to the top when the component mounts
-  //   window.scrollTo(0, 0);
-  // }, []);
+  const buttonStyle = {
+    border: '2px solid rgb(94, 72, 255)',
+    borderRadius: '0px',
+    boxShadow: 'inset 0 0 0 0 #5E48FF',
+    borderColor: '#5E48FF',
+    width: '200px'
+  }
   return (
     <PageLayout>
-      <Container bsPrefix='landing-main-container'>
-        <Container bsPrefix='landing-rotaing-image-container'>
-          <SpotlightCard/>
-        </Container>
+      <Container bsPrefix='landing-rotaing-image-container'>
+        <SpotlightCard/>
+      </Container>
         
-        <Container bsPrefix='landing-intro-text-container'>
+      <Container bsPrefix='landing-intro-text-container'>
         <Row>
           <Col>
             <h1 className='landing-title-text'>Center for Intelligent Industrial Robotics (CIIR)</h1>
@@ -34,19 +35,17 @@ export const LandingPage = () => {
           </Col>
         </Row>
         <Row>
-          <Col style={{justifyContent: 'center', alignItems: 'center', display: 'flex', paddingRight: ''}}>
+          <Col style={{justifyContent: 'center', alignItems: 'center', display: 'flex'}}>
             <p className='landing-intro-text2'>We Are Unique</p>    
           </Col>
         </Row>
         <Row>
           <Col style={{justifyContent: 'center', alignItems: 'center', display: 'flex', paddingLeft: '20%'}}>
             <Link to='/AboutUs'>
-              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>Find Out Why  <FaArrowRight size={22} /></Button>
+              <Button style={buttonStyle} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>Find Out Why  <FaArrowRight size={22} /></Button>
             </Link>
           </Col>
         </Row>
-        </Container>
-
       </Container>
 
       <Container bsPrefix='landing-page-cards-container'>

@@ -27,7 +27,7 @@ export const People = [
         lastName: 'St. John-Tesky',
         title: '',
         position: 'Administrative Coordinator',
-        photo: 'src/images/ProfilePhotos/M_Everett.jpg',
+        photo: 'src/images/ProfilePhotos/st-john-tesky.jpg',
         imgAlt: 'personal photo',
         decription: 'Tammy St John-Tesky is the Administrative Coordinator for the University of Idaho Computer Science Department in Coeur d’Alene and is also serving as the Administrative Coordinator for the center. Her focus areas include staff and student support, outreach, as well as assisting with all other needs of the center. She also enjoys working with and supporting all of the fantastic students in the center’s undergraduate research cohort at University of Idaho Coeur d’Alene and North Idaho College. ',
         email: 'tammy@uidaho.edu',

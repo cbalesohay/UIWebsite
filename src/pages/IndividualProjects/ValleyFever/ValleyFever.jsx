@@ -6,6 +6,13 @@ import { Link } from 'react-router-dom';
 import './valleyfever.css'
 
 export const ValleyFever = () => {
+  const buttonStyle = {
+    border: '2px solid rgb(94, 72, 255)',
+    borderRadius: '0px',
+    boxShadow: 'inset 0 0 0 0 #5E48FF',
+    borderColor: '#5E48FF',
+    width: '200px'
+  }
   return (
     <>
       <PageLayout>
@@ -16,7 +23,7 @@ export const ValleyFever = () => {
           <p>This project has been supported by the College of Natural Resources as well as Idaho INBRE.</p>
           <Container style={{textAlign: 'start', paddingBottom: '10px'}}>
             <Link to='/Projects'>
-              <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
+              <Button style={buttonStyle} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
             </Link>
           </Container>
         </Container>

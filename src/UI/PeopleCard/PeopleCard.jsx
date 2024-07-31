@@ -6,24 +6,32 @@ import './peoplecard.css'
 
 export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, description, position, email}) => {
   const [changeCard, setChangeCard] = useState(false);
-
   /**
    * Function to handle Card change
    */
   const handleClick = () => {
     setChangeCard(!changeCard)
   }
-
+  const cardPeopleStyle = {
+    width: '35rem',
+    height: '25rem',
+    margin: '10px',
+    padding: '0px',
+    borderColor: 'none',
+    cursor: 'pointer',
+    borderRadius: '10px',
+    border: '0',
+    justifyContent: 'center'
+  }
   return (
     <>
       {(changeCard) ?
         /* Bootstrap Card Layout */
-        <Card onClick={() => setChangeCard(!changeCard)} style={{width: '35rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container-back'>
+        <Card onClick={() => setChangeCard(!changeCard)} style={cardPeopleStyle} bsPrefix='card people-card-container-back'>
           <Card.Body>
             {/**
             * If title and name are unavailible, the placeholder animation = true
             */}
-            
             {(!firstName) ?
               <Placeholder as={Card.Title} animation="glow">
                 <Placeholder xs={6} />
@@ -73,7 +81,7 @@ export const PeopleCard = ({imgSrc, imgAlt, title, firstName, lastName, descript
           </Card.Body>
         </Card>
       :
-        <Card onClick={() => setChangeCard(!changeCard)} style={{width: '35rem' , height: '25rem', margin: '10px', padding: '0px', borderColor: 'none', cursor: 'pointer', borderRadius: '10px', border: '0', justifyContent: 'center'}} bsPrefix='card people-card-container-front'>
+        <Card onClick={() => setChangeCard(!changeCard)} style={cardPeopleStyle} bsPrefix='card people-card-container-front'>
           {/**
           * If image and alt are unavailible, the placeholder animation = true
           */}

@@ -9,15 +9,17 @@ import './contactuspage.css'
 
 
 export const ContactUsPage = () => {
-  // useEffect(() => {
-  //   // Scroll to the top when the component mounts
-  //   window.scrollTo(0, 0);
-  // }, []);
+  const topImageStyle = {
+    width: '100%',
+    maxHeight: '600px',
+    minHeight: '330px',
+    objectFit: 'cover'
+  }
   return (
     <PageLayout>
       {/* <h1 className='contact-title-text'>CONTACT US</h1> */}
       <Container fluid style={{padding: '0px', position: 'relative'}}>
-        <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/View_Hedlund.jpg' alt='View' fluid/>
+        <Image style={topImageStyle} src='src/images/General/View_Hedlund.jpg' alt='View' fluid/>
         <h1 className='picture-text-style'>CONTACT US</h1>
       </Container>
       <Container>

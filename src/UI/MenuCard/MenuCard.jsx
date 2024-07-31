@@ -6,10 +6,26 @@ import Spinner from 'react-bootstrap/Spinner';
 import './menucard.css'
 
 export const MenuCard = ({imgSrc, imgAlt, title, description, buttonText, link}) => {
+  const cardMenuStyle = {
+    width: '25rem',
+    height: '30rem',
+    margin: '20px',
+    border: 'none',
+    backgroundColor: '#FFFFFF',
+    borderRadius: '0px',
+    boxShadow: '5px 5px 5px rgb(255, 255, 255, .3)'
+  }
+  const buttonStyle = {
+    border: '2px solid rgb(241, 179, 0)',
+    borderRadius: '0px',
+    boxShadow: 'inset 0 0 0 0 #F1B300',
+    borderColor: '#F1B300',
+    width: '200px'
+  }
   return (
     <>
       {/* Bootstrap Card Layout */}
-      <Card style={{ width: '25rem', height: '30rem', margin: '20px', border: 'none', backgroundColor: '#FFFFFF', borderRadius: '0px', boxShadow: '5px 5px 5px rgb(255, 255, 255, .3)'}}>
+      <Card style={cardMenuStyle}>
           {/**
            * If image and alt are unavailible, the placeholder animation = true
            */}
@@ -61,7 +77,7 @@ export const MenuCard = ({imgSrc, imgAlt, title, description, buttonText, link})
             </Spinner>
           </Button>
           :
-          <Button style={{border: '2px solid rgb(241, 179, 0)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #F1B300', borderColor: '#F1B300', width: '200px'}} bsPrefix='btn btn-slide-animation btn-slide-animation-pride-gold' type='submit' value='submit' href={link}>{buttonText}</Button>
+          <Button style={buttonStyle} bsPrefix='btn btn-slide-animation btn-slide-animation-pride-gold' type='submit' value='submit' href={link}>{buttonText}</Button>
         }
         </Card.Footer>
       </Card>

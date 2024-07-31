@@ -7,11 +7,25 @@ import Image from 'react-bootstrap/Image';
 import './projectcard.css'
 
 export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
+  const cardLinkStyle = {
+    width: '25rem',
+    height: '30rem',
+    cursor: 'pointer',
+    textDecoration: 'none'
+  }
+  const cardImageStyle = {
+    height: '60%',
+    width: '100%',
+    borderTopLeftRadius: '0px',
+    borderTopRightRadius: '0px',
+    borderBottomLeftRadius: '0px',
+    borderBottomRightRadius: '0px'
+  }
   return (
     <>
       {/* <Link href={link} bsPrefix='project-link-container'> */}
         {/* Bootstrap Card Layout */}
-        <CardLink href={link} style={{ width: '25rem', height: '30rem', cursor: 'pointer', textDecoration: 'none'}} bsPrefix='card project-card-container'>
+        <CardLink href={link} style={cardLinkStyle} bsPrefix='card project-card-container'>
           {/**
            * If image and alt are unavailible, the placeholder animation = true
            */}
@@ -22,7 +36,7 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
               </Spinner>
             </Placeholder>
             :
-            <Image variant="top" style={{height: '60%', width: '100%', borderTopLeftRadius: '0px', borderTopRightRadius: '0px', borderBottomLeftRadius: '0px', borderBottomRightRadius: '0px'}} src={imgSrc} alt={imgAlt}/>
+            <Image variant="top" style={cardImageStyle} src={imgSrc} alt={imgAlt}/>
           }
           <Card.Body>
             {/**

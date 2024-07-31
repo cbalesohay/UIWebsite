@@ -7,13 +7,16 @@ import { DesktopNavComponentsFooter } from './DesktopFooterComponents/DesktopNav
 import { DesktopContactComponentsFooter } from './DesktopFooterComponents/DesktopContactComponentsFooter';
 import './desktopviewfooter.css'
 
-
-
-
 export const DesktopViewFooter = () => {
+    const desktopFooterStyle = {
+        borderTopLeftRadius: '0px',
+        borderTopRightRadius: '0px',
+        borderBottomLeftRadius: '0px',
+        borderBottomRightRadius: '0px'
+    }
   return (
     <>
-        <Card data-bs-theme="dark" style={{borderTopLeftRadius: '0px', borderTopRightRadius: '0px', borderBottomLeftRadius: '0px', borderBottomRightRadius: '0px'}}>
+        <Card data-bs-theme="dark" style={desktopFooterStyle}>
             <Card.Body>
                 <Container>
                     <Row sm={3}>

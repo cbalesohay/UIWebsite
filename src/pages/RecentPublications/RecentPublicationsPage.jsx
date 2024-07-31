@@ -9,24 +9,27 @@ import './recentpublications.css'
 
 
 export const RecentPublicationsPage = () => {
+  const topImageStyle = {
+    width: '100%',
+    maxHeight: '600px',
+    minHeight: '330px',
+    objectFit: 'cover'
+  }
   return (
     <PageLayout>
       <Container fluid style={{padding: '0px', position: 'relative'}}>
-        <Image style={{width: '100%', maxHeight: '600px', minHeight: '330px', objectFit: 'cover'}} src='src/images/General/nic_hedlund.jpg' alt='NIC Hedlund' fluid/>
+        <Image style={topImageStyle} src='src/images/General/nic_hedlund.jpg' alt='NIC Hedlund' fluid/>
         <h1 className='picture-text-style'>Recent Publications</h1>
       </Container>
-      {/*
-      * Need to fix the css so it is in this document
-      */}
+      <h3 className='sub-title-recent-pubs'>Conference Papers</h3>
       <Container bsPrefix="publications-cards-container">
-        <h3 className='sub-title-recent-pubs'>Conference Papers</h3>
         {/* Map through all availible Papers */}
         {Papers.map((paper) => (
           <PublicationsCard key={paper.id} name={paper.name} authors={paper.authors} description={paper.description} location={paper.location}/>
         ))}
       </Container>
+      <h3 className='sub-title-recent-pubs'>Conference Presentations</h3>
       <Container bsPrefix="publications-cards-container">
-        <h3 className='sub-title-recent-pubs'>Conference Presentations</h3>
         {/* Map through all availible Presentations */}
         {Presentations.map((present) => (
           <PublicationsCard key={present.id} name={present.name} authors={present.authors} description={present.description} location={present.location}/>

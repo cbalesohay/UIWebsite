@@ -6,6 +6,29 @@ import { Link } from 'react-router-dom';
 import './scarecro.css'
 
 export const Scarecro = () => {
+  const buttonStyle = {
+    border: '2px solid rgb(94, 72, 255)',
+    borderRadius: '0px',
+    boxShadow: 'inset 0 0 0 0 #5E48FF',
+    borderColor: '#5E48FF',
+    width: '200px'
+  }
+  const sixOne = {
+    span: 6,
+    order: 1
+  }
+  const sixTwo = {
+    span: 6,
+    order: 2
+  }
+  const twelveOne = {
+    span: 12,
+    order: 1
+  }
+  const twelveTwo = {
+    span: 12,
+    order: 2
+  }
   return (
     <>
         <PageLayout>
@@ -17,7 +40,7 @@ export const Scarecro = () => {
             <br></br>
             <h3 className='scarecro-main-subheaders'>Components</h3>
             <Row>
-              <Col xs={{span: 12, order: 2}} md={{span: 6, order: 1}}>
+              <Col xs={twelveTwo} md={sixOne}>
                 <p className='scarecro-subheaders'>Sensors:</p>
                 <p className='scarecro-main-text'>Currently supported sensors include: S5 BLE temp/humidity beacon, KKM K6P BLE temp/humidity beacon, minew S1 BLE temp/humidity beacon, Atlas Gravity pH sensor, Atlas Ezo pH sensor, Meter Teros 10 soil moisture sensor, Switchdoc Labs Weather Rack 2 Sensor, Renogy Wanderer Solar Controller, BMP280 air pressure sensor, Switchdoc Labs Thunderboard Sensor, Switchdoc Labs AQI sensor, and the Tempest Weather Station.</p>
                 <p className='scarecro-subheaders'>Data Gators:</p>
@@ -25,16 +48,16 @@ export const Scarecro = () => {
                 <p className='scarecro-subheaders'>Gateways:</p>
                 <p className='scarecro-main-text'>Gateways are implemented via low-cost raspberry pi computers which listen for short and long range sensors on wired interfaces, 433 Mhz radio, Bluetooth, and MQTT Wifi. The Gateways also take readings from the Data Gator devices. Gateways send the information to the middle agent. Gateways also run on solar power.</p>
               </Col>
-              <Col xs={{span: 12, order: 1}} md={{span: 6, order: 2}}>
+              <Col xs={twelveOne} md={sixTwo}>
                 <img src='src/images/ScarecroPhotos/SOAC_install_Malik_Aaron.jpg' className='scarecro-img'/>  
               </Col>
             </Row>
             <br></br>
             <Row>
-              <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1}}>
+              <Col xs={twelveOne} md={sixOne}>
                 <img src='src/images/ScarecroPhotos/SOAC_Lacey.jpg' className='scarecro-img'/>  
               </Col>
-              <Col xs={{span: 12, order: 2}} md={{span: 6, order: 2}}>
+              <Col xs={twelveTwo} md={sixTwo}>
                 <p className='scarecro-subheaders'>Middle Agent:</p>
                 <p className='scarecro-main-text'>The middle agent is typically responsible for high-level internet transactions, database storage, and data cleaning operations and can be hosted locally or on the cloud.</p>  
                 <p className='scarecro-subheaders'>Database:</p>
@@ -48,7 +71,7 @@ export const Scarecro = () => {
             <br></br>
             <h3 className='scarecro-main-subheaders'>Deployments</h3>
             <Row>
-              <Col xs={{span: 12, order: 2}} md={{span: 6, order: 1}}>
+              <Col xs={twelveTwo} md={sixOne}>
                 <p className='scarecro-subheaders'>The University of Idaho has two main deployments of the SCARECRO system</p>
                 <br></br>
                 <p className='scarecro-subheaders'>Laurel Grove Wine Farm:</p>
@@ -56,33 +79,33 @@ export const Scarecro = () => {
                 <p className='scarecro-subheaders'>Sandpoint Organic Agriculture Center:</p>
                 <p className='scarecro-main-text'>The University of Idaho SOAC center is a heritage orchard with over 60 varieties of apple. The deployment has one gateway, 1 Data Gator, and 2 weather racks. Future work at this deployment includes integrating dendrometers and using the information for degree day modeling.</p>  
               </Col>
-              <Col xs={{span: 12, order: 1}} md={{span: 6, order: 2}}>
+              <Col xs={twelveOne} md={sixTwo}>
                 <img src='src/images/ScarecroPhotos/SOAC_Garrett.jpg' className='scarecro-img'/>  
               </Col>
             </Row>
             <br></br>
             <h3 className='scarecro-main-subheaders'>Support</h3>
             <Row>
-              <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1}}>
+              <Col xs={twelveOne} md={sixOne}>
                 <img src='src/images/ScarecroPhotos/SOAC_Aaron_Malik.jpg' className='scarecro-img'/>  
               </Col>
-              <Col xs={{span: 12, order: 2}} md={{span: 6, order: 2}}>
+              <Col xs={twelveTwo} md={sixTwo}>
                 <p className='scarecro-subheaders'>Funding:</p>
                 <p className='scarecro-main-text'>The SCARECRO system has received a wide variety of university, government, and private industry support. Funding agencies and partners have included: Laurel Grove Wine Farm, Sandpoint Organic Agriculture Center, University of Idaho Office of Undergraduate Research, NASA Idaho Space Grant Consortium, Idaho Higher Education Research Council, and Susan Rumble.</p>  
               </Col>
             </Row>
             <br></br>
             <Row>
-              <Col xs={{span: 12, order: 1}} md={{span: 6, order: 1}}>
+              <Col xs={twelveOne} md={sixOne}>
                 <img src='src/images/ScarecroPhotos/SCARECRO_Diagram.png' className='scarecro-img'/>
               </Col>
-              <Col xs={{span: 12, order: 2}} md={{span: 6, order: 2}}>
+              <Col xs={twelveTwo} md={sixTwo}>
                 <img src='src/images/ScarecroPhotos/Laurel_Grove.jpg' className='scarecro-img'/>  
               </Col>
             </Row>
             <Container style={{textAlign: 'start', paddingBottom: '10px'}}>
               <Link to='/Projects'>
-                <Button style={{border: '2px solid rgb(94, 72, 255)',borderRadius: '0px', boxShadow: 'inset 0 0 0 0 #5E48FF', borderColor: '#5E48FF', width: '200px'}} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
+                <Button style={buttonStyle} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'><FaArrowLeft size={22} /> Back to Projects</Button>
               </Link>
             </Container>
           </Container>
