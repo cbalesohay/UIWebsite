@@ -1,0 +1,25 @@
+.recent-title-text{
+    font-weight: 900;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.sub-title-recent-pubs{
+    font-weight: 700;
+    text-align: center;
+}
+
+.publications-cards-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
