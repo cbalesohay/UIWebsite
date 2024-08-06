@@ -22,9 +22,6 @@ export const MobileViewFooter = () => {
             <Row sm={1}>
                 <Col>
                   <MobileContactComponentsFooter/>
-                  {/**
-                   * Need to fix the spacing of the icons
-                   */}
                   <MobileSocialComponentsFooter/>
                 </Col>
             </Row>

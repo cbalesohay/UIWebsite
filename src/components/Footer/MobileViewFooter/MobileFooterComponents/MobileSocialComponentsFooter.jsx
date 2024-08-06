@@ -5,24 +5,28 @@ import { FaSquareFacebook, FaSquareYoutube, FaSquareXTwitter, FaSquareInstagram,
 import './mobilesocialcomponentsfooter.css'
 
 export const MobileSocialComponentsFooter = () => {
+    const MobileSocialStyle = {
+        padding: '2px',
+        margin: '0px'
+    }
   return (
     <>
     <Row>
         <Col>
-            <Row fluid style={{padding: '35px'}}>
-                <Col>
+            <Row>
+                <Col style={MobileSocialStyle}>
                     <span><a href='https://www.facebook.com/uidaho' className='mobile-view-footer'><FaSquareFacebook size={40} /></a></span>    
                 </Col>
-                <Col>
+                <Col style={MobileSocialStyle}>
                     <span><a href='https://twitter.com/uidaho' className='mobile-view-footer'><FaSquareXTwitter size={40} /></a></span>    
                 </Col>
-                <Col>
+                <Col style={MobileSocialStyle}>
                     <span><a href='https://instagram.com/uidaho' className='mobile-view-footer'><FaSquareInstagram size={40} /></a></span>    
                 </Col>
-                <Col>
+                <Col style={MobileSocialStyle}>
                     <span><a href='https://www.youtube.com/user/uidahovideo' className='mobile-view-footer'><FaSquareYoutube size={40} /></a></span>    
                 </Col>
-                <Col>
+                <Col style={MobileSocialStyle}>
                     <span><a href='https://www.linkedin.com/school/10313' className='mobile-view-footer'><FaLinkedin size={40} /></a></span>    
                 </Col>
             </Row>

@@ -4,7 +4,7 @@ import './googlemap.css'
 
 export const GoogleMap = () => {
   const apiMapStyle = {
-    width: '400px',
+    maxWidth: '400px',
     height: '500px',
     marginLeft: 'auto',
     marginRight: 'auto',
