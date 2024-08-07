@@ -109,3 +109,45 @@ No animation on mobile
     font-weight: 700;
     text-align: start;
 }
+
+@media screen and (max-width: 420px) {
+    .people-card-title-before{
+        font-size: 25px;
+    }
+    .people-card-title-after{
+        font-size: 25px;
+    }
+    
+    .people-card-position-after{
+        font-size: 18px;
+    }
+    
+    .people-card-description{
+        font-size: 13px;
+    }
+    
+    .people-card-email{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .people-card-title-before{
+        font-size: 20px;
+    }
+    .people-card-title-after{
+        font-size: 20px;
+    }
+    
+    .people-card-position-after{
+        font-size: 15px;
+    }
+    
+    .people-card-description{
+        font-size: 11px;
+    }
+    
+    .people-card-email{
+        font-size: 11px;
+    }
+}

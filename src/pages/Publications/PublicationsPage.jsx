@@ -18,7 +18,7 @@ export const PublicationsPage = () => {
   return (
     <PageLayout>
       <Container fluid style={{padding: '0px', position: 'relative'}}>
-        <Image style={topImageStyle} src='src/images/General/nic_hedlund.jpg' alt='NIC Hedlund' fluid/>
+        <Image style={topImageStyle} src='src/images/AutomationPhotos/Automation-group-photo-3.jpg' alt='NIC Hedlund' fluid/>
         <h1 className='picture-text-style'>PUBLICATIONS</h1>
       </Container>
       <h3 className='sub-title-recent-pubs'>Conference Papers</h3>

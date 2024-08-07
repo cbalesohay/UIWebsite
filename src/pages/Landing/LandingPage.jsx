@@ -10,6 +10,13 @@ import './landingpage.css'
 
 
 export const LandingPage = () => {
+  const buttonContainerStyle = {
+    justifyContent: 'center',
+    alignItems: 'center',
+    display: 'flex',
+    paddingLeft: '20%',
+    paddingBottom: '20px'
+  }
   const buttonStyle = {
     border: '2px solid rgb(94, 72, 255)',
     borderRadius: '0px',
@@ -23,7 +30,7 @@ export const LandingPage = () => {
         <SpotlightCard/>
       </Container>
         
-      <Container bsPrefix='landing-intro-text-container'>
+      <Container fluid bsPrefix='landing-intro-text-container'>
         <Row>
           <Col>
             <h1 className='landing-title-text'>Center for Intelligent Industrial Robotics (CIIR)</h1>
@@ -40,7 +47,7 @@ export const LandingPage = () => {
           </Col>
         </Row>
         <Row>
-          <Col style={{justifyContent: 'center', alignItems: 'center', display: 'flex', paddingLeft: '20%'}}>
+          <Col style={buttonContainerStyle}>
             <Link to='/AboutUs'>
               <Button style={buttonStyle} type='submit' value='submit' bsPrefix='btn btn-slide-animation btn-slide-animation-lupine'>Find Out Why  <FaArrowRight size={22} /></Button>
             </Link>
