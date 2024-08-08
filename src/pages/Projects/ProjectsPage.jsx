@@ -15,13 +15,11 @@ export const ProjectsPage = () => {
   }
   return (
       <PageLayout>
-        {/* <h1 className='project-title-text'>PROJECTS</h1> */}
         <Container fluid style={{padding: '0px', position: 'relative'}}>
           <Image style={topImageStyle} src='src/images/General/weather_rack_on_Tubbs_Hill.jpg' alt='View' fluid/>
           <h1 className='picture-text-style'>PROJECTS</h1>
         </Container>
         <Container bsPrefix='project-intro-container'>
-        {/* <p>This should be an introduction to the project page *Still need to figure out layout for this*</p> */}
         </Container>
         <Container bsPrefix='project-layout'>
           {/* Map through all availible Projects */}

@@ -60,13 +60,8 @@ export const ProjectCard = ({imgSrc, imgAlt, title, description, link}) => {
               <Placeholder xs={6} /> <Placeholder xs={8} />
             </Placeholder>
             :
-            /**
-             * this is throwing an error in browser <div> / <p> cannot go in here
-             */
             <Card.Text bsPrefix='project-hover-text-change'>
-              {/* <p className='project-decription-text'>{description}</p> */}
               {description}
-              {/* <h1 className='hover-comment'></h1> */}
             </Card.Text>
           }
           </Card.Body>
