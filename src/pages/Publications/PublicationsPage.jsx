@@ -25,14 +25,14 @@ export const PublicationsPage = () => {
       <Container bsPrefix="publications-cards-container">
         {/* Map through all availible Papers */}
         {Papers.map((paper) => (
-          <PublicationsCard key={paper.id} name={paper.name} authors={paper.authors} description={paper.description} location={paper.location}/>
+          <PublicationsCard key={paper.id} name={paper.name} authors={paper.authors} description={paper.description} location={paper.location} link={paper.link}/>
         ))}
       </Container>
       <h3 className='sub-title-recent-pubs'>Conference Presentations</h3>
       <Container bsPrefix="publications-cards-container">
         {/* Map through all availible Presentations */}
         {Presentations.map((present) => (
-          <PublicationsCard key={present.id} name={present.name} authors={present.authors} description={present.description} location={present.location}/>
+          <PublicationsCard key={present.id} name={present.name} authors={present.authors} description={present.description} location={present.location} link={present.link}/>
         ))}
       </Container>
     </PageLayout>

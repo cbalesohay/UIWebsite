@@ -18,16 +18,16 @@ export const DesktopContactComponentsFooter = () => {
                         <Col>
                             <FaPhone size={20} style={{margin: '10px'}}/>
                             <br></br>
-                            <Link to='tel:2081234567' style={linkStyle}>(208)659-5772</Link>
+                            <Link to='tel:2081234567' style={linkStyle}>(208)123-4567</Link>
                         </Col>
                     </Row>
-                    <Row style={{margin: '10px'}}>
+                    {/* <Row style={{margin: '10px'}}>
                         <Col>
                             <FaEnvelope size={20} style={{margin: '10px'}}/>
                             <br></br>
                             <Link to='mailto:email@uidaho.edu' style={linkStyle}>jshovic@uidaho.edu</Link>
                         </Col>
-                    </Row>
+                    </Row> */}
                     <Row style={{margin: '10px'}}>
                         <Col>
                             <FaLocationDot size={20} style={{margin: '10px'}}/>

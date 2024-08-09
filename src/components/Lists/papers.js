@@ -5,7 +5,7 @@ export const Papers = [
         description: '“A Provisionless Network Solution for Collecting Data from Wired and Wireless Sensors”, 16th International Conference on Precision Agriculture.',
         authors: 'Garrett Wells, Mary Everett, John Shovic',
         location: 'July 2024, Manhattan, Kansas (Paper and Oral Presentation)',
-        link: 'link',
+        link: 'https://www.ispag.org/proceedings/?action=abstract&id=9856&title=Data+Gator%3A+a+Provisionless+Network+Solution+for+Collecting+Data+from+Wired+and+Wireless+Sensors&search=authors.',
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ export const Papers = [
         description: '“Explainable Neural Network Alternatives for AI Predictions: Genetic Algorithm Quantitative Association Rule Mining”, 16th International Conference on Precision Agriculture.',
         authors: 'Mary Everett',
         location: 'July 2024, Manhattan, Kansas (Paper and Oral Presentation)',
-        link: 'link',
+        link: 'https://www.ispag.org/proceedings/?action=abstract&id=10099&title=Explainable+Neural+Network+Alternatives+for+Ai+Predictions%3A+Genetic+Algorithm+Quantitative+Association+Rule+Mining+&search=authors',
     },
     {
         id: 2,
@@ -37,6 +37,6 @@ export const Papers = [
         description: '“Dimensionality Reduction and Similarity Metrics for Predicting Crop Yields in Sparse Data Microclimates”, 16th International Conference on Precision Agriculture.',
         authors: 'Leif Huender, Mary Everett',
         location: 'July 2024, Manhattan, Kansas (Paper and Poster Presentation)',
-        link: 'link',
+        link: 'https://www.ispag.org/proceedings/?action=abstract&id=11224&title=Dimensionality+Reduction+and+Similarity+Metrics+for+Predicting+Crop+Yields+in+Sparse+Data+Microclimates&search=authors.',
     },
 ]

@@ -23,12 +23,12 @@ export const MobileContactComponentsFooter = () => {
                     </Row>
                     <Row>
                     <Col>
-                        <Link to='tel:2081234567' style={linkStyle}>(208)659-5772</Link>
+                        <Link to='tel:2081234567' style={linkStyle}>(208)123-4567</Link>
                     </Col>
                     </Row>
                 </Col>
             </Row>
-            <Row style={{marginBottom: '15px'}}>
+            {/* <Row style={{marginBottom: '15px'}}>
                 <Col>
                     <Row>
                     <Col style={{padding: '5px'}}>
@@ -41,7 +41,7 @@ export const MobileContactComponentsFooter = () => {
                     </Col>
                     </Row>
                 </Col>
-            </Row>
+            </Row> */}
             <Row style={{marginBottom: '15px'}}>
                 <Col>
                     <Row>
